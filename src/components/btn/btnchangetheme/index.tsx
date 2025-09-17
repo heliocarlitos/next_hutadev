@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
-import { MdSunny } from "react-icons/md";
 import "./index.css";
 
 export function BtnChangeTheme() {
@@ -35,6 +34,7 @@ export function BtnChangeTheme() {
         if (darkMode === null) return;
         setDarkMode(!darkMode);
         localStorage.setItem("theme", !darkMode ? "dark" : "light");
+        window.navigator.vibrate(30);
     };
 
     return (
