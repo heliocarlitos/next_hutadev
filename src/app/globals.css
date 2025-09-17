@@ -30,7 +30,7 @@ html {
 :root {
   --red-color: #ff004c;
   --white-color: #fff;
-  --blue-color: #3a37eb;
+  --blue-color: #144EE3;
   --blue-color-hover: #24237c;
   --blue-transparent: #7977ff27;
   --gray-color: #313131;
@@ -57,6 +57,11 @@ html {
 }
 
 body {
+  width: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-inline: 1px solid #000; */
   font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
+import { IoMdSunny, IoMdMoon } from "react-icons/io";
+import { MdSunny } from "react-icons/md";
 import "./index.css";
 
 export function BtnChangeTheme() {
@@ -37,13 +38,13 @@ export function BtnChangeTheme() {
     };
 
     return (
-        <div className="BtnChangeTheme">
+        <div className="btnchangetheme">
             <button aria-label="Mudar tema" onClick={toggleTheme}>
                 <span className={`icon sun ${darkMode ? "exit" : "enter"}`}>
-                    <IoSunnyOutline />
+                    <IoMdMoon />
                 </span>
                 <span className={`icon moon ${darkMode ? "enter" : "exit"}`}>
-                    <IoMoonOutline />
+                    <IoMdSunny />
                 </span>
             </button>
         </div>

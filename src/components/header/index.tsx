@@ -4,18 +4,19 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BtnChangeTheme } from "../btn/btnchangetheme";
 import "./header.css";
+import { BtnShowMenuMob } from "../btn/btnshowmenumob";
 
 export function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [hidden, setHidden] = useState(false);
     const [lastScroll, setLastScroll] = useState(0);
 
-    useEffect(() => { 
+    useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
 
             // Encolhe o heaader aos 55
-            setScrolled(currentScroll > 55);
+            setScrolled(currentScroll > 30);
 
             // distância mínima para ocultar o header
             const hideScroll = 900;
@@ -77,8 +78,11 @@ export function Header() {
                 <div className="btn-local">
                     <BtnChangeTheme />
                     <div className="btn">
-                        <button className="border-gradient">Criar conta</button>
+                        <button className="border-gradient creat-count">
+                            Criar conta
+                        </button>
                     </div>
+                    <BtnShowMenuMob />
                 </div>
             </nav>
         </header>

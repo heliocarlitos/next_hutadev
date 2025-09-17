@@ -1,0 +1,81 @@
+.btnshowmenumob {
+    align-items: center;
+    justify-content: center;
+}
+
+.btnshowmenumob .icon-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 100px;
+    transition: background-color 0.2s ease;
+    height: 35px;
+    width: 35px;
+    outline: none;
+
+    &:focus {
+        background-color: var(--blue-transparent);
+    }
+}
+
+.btnshowmenumob .icon-menu span {
+    position: absolute;
+    right: 6px;
+    display: block;
+    width: 20px;
+    height: 2.1px;
+    border-radius: 100px;
+    background-color: var(--text-dark-light);
+    transition: all 0.2s ease;
+}
+
+.btnshowmenumob .icon-menu span:nth-child(1) {
+    margin-top: -10px;
+}
+
+.btnshowmenumob .icon-menu span:nth-child(2) {
+    width: 14px;
+    margin-top: 8px;
+}
+
+.btnshowmenumob .icon-menu span:nth-child(3) {
+    width: 0;
+    transition: 0s ease;
+}
+
+.btnshowmenumob .icon-menu.active span:nth-child(1) {
+    width: 26px;
+    transform: rotate(45deg);
+    margin-top: 0;
+    right: 4px;
+}
+
+.btnshowmenumob .icon-menu.active span:nth-child(2) {
+    width: 0;
+}
+
+.btnshowmenumob .icon-menu.active span:nth-child(3) {
+    width: 26px;
+    transform: rotate(-45deg);
+    right: 4px;
+}
+
+@media (min-width: 1040px) {
+    .btnshowmenumob {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {
+    .btnshowmenumob {
+        display: flex;
+    }
+}
+
+@media (max-width:600px) {
+    .btnshowmenumob .icon-menu:focus {
+        background-color: transparent;
+    }
+}

@@ -1,11 +1,15 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform .3s ease, opacity .3s ease;
 }
 
@@ -14,29 +18,28 @@
 }
 
 .header.hidden {
-    transform: translateY(-120%);
-    /* sobe para fora da tela */
+    transform: translateY(-30%);
     opacity: 0;
 }
 
 .header nav {
     display: flex;
-    padding: 0 20px;
+    padding: 14px 20px;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     width: 100%;
     transition: all .3s ease;
     border: var(--transparent-border);
-    margin-top: 30px;
+    margin-top: 20px;
+    border-radius: 100px;
 }
 
 .header nav.scrolled {
     width: 1000px;
     background-color: var(--sec-bg-color);
-    border-radius: 100px;
     border: var(--thin-border);
-    padding: 14px 20px;
+    margin-inline: 20px;
 }
 
 .header nav.scrolled .ul-links {
@@ -95,7 +98,7 @@
     gap: 10px;
 }
 
-.header nav .btn-local .btn button {
+.header nav .btn-local .btn .creat-count {
     color: var(--white-color);
     position: relative;
     width: 120px;
@@ -114,11 +117,38 @@
     }
 }
 
-.header nav.scrolled .btn-local .btn button {
+.header nav.scrolled .btn-local .btn .creat-count {
     background-color: var(--white-color);
     color: var(--only-dark);
 }
 
-.header nav.scrolled .btn-local .BtnChangeTheme .icon {
+.header nav.scrolled .btn-local .btnchangetheme .icon {
     color: var(--white-color);
+}
+
+.header nav.scrolled .btn-local .btnshowmenumob .icon-menu span {
+    background-color: var(--white-color);
+}
+
+@media (min-width: 1040px) {
+    .header nav .ul-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 1040px) {
+    .header nav .ul-links {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .header nav .logo p,
+    .header nav .btn-local .btn .creat-count {
+        display: none;
+    }
+    .header nav {
+        padding: 10px 20px;
+    }
 }
