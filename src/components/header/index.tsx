@@ -10,7 +10,7 @@ export function Header() {
     const [hidden, setHidden] = useState(false);
     const [lastScroll, setLastScroll] = useState(0);
 
-    useEffect(() => {
+    useEffect(() => { 
         const handleScroll = () => {
             const currentScroll = window.scrollY;
 
