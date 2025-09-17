@@ -14,20 +14,13 @@ export function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
-
-            // Encolhe o heaader aos 55
-            setScrolled(currentScroll > 30);
-
-            // distância mínima para ocultar o header
             const hideScroll = 900;
-
+            setScrolled(currentScroll > 30);
             if (currentScroll > lastScroll && currentScroll > hideScroll) {
                 setHidden(true);
             } else if (currentScroll < lastScroll) {
-                // rolou para cima → mostrar header imediatamente
                 setHidden(false);
             }
-
             setLastScroll(currentScroll);
         };
 
@@ -58,18 +51,23 @@ export function Header() {
                     <li>
                         <Link href="/">Home</Link>
                     </li>
+
                     <li>
                         <Link href="/servicos">Serviços</Link>
                     </li>
+
                     <li>
                         <Link href="/produtos">Produtos</Link>
                     </li>
+
                     <li>
                         <Link href="/precos">Preços</Link>
                     </li>
+
                     <li>
                         <Link href="/sobre">Sobre</Link>
                     </li>
+
                     <li>
                         <Link href="/contactos">Contactos</Link>
                     </li>

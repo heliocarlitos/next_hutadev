@@ -153,10 +153,3 @@ svg {
   justify-content: center;
   align-items: center;
 }
-
-/* Keyframes da animação do gradiente */
-@keyframes gradientMove {
-  0% {
-    transform: rotate(365deg);
-  }
-}

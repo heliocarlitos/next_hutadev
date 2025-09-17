@@ -1,4 +1,3 @@
-// src/components/unicos/btnshowmenumob/BtnShowMenuMob.tsx
 import { useState } from "react";
 import "./btnshowmenumob.css";
 
@@ -6,8 +5,8 @@ export function BtnShowMenuMob() {
     const [menuAberto, setMenuAberto] = useState(false);
 
     const toggleMenu = () => {
-        setMenuAberto(prev => !prev);
-        if (window.navigator.vibrate) window.navigator.vibrate(30); // vibração opcional
+        setMenuAberto((prev) => !prev);
+        if (window.navigator.vibrate) window.navigator.vibrate(30);
     };
 
     return (
