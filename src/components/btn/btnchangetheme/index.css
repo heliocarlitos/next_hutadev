@@ -1,0 +1,79 @@
+.BtnChangeTheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BtnChangeTheme button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.BtnChangeTheme button:focus {
+  outline: none;
+  background-color: var(--blue-transparent);
+}
+
+.BtnChangeTheme .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  color: var(--text-dark-light);
+}
+
+.BtnChangeTheme .icon.sun.enter {
+  transform: translate(-50%, 100%); /* vem de baixo */
+  opacity: 0;
+  animation: slideUpIn 0.25s forwards;
+}
+
+.BtnChangeTheme .icon.sun.exit {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: slideUpOut 0.25s forwards;
+}
+
+.BtnChangeTheme .icon.moon.enter {
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  animation: slideUpIn 0.25s forwards;
+}
+
+.BtnChangeTheme .icon.moon.exit {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: slideUpOut 0.25s forwards;
+}
+
+@keyframes slideUpIn {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpOut {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+}

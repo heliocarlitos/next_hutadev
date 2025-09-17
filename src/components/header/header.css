@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.header.scrolled {
+    backdrop-filter: blur(4px);
+}
+
+.header.hidden {
+    transform: translateY(-120%);
+    /* sobe para fora da tela */
+    opacity: 0;
+}
+
+.header nav {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    transition: all .3s ease;
+    border: var(--transparent-border);
+    margin-top: 30px;
+}
+
+.header nav.scrolled {
+    width: 1000px;
+    background-color: var(--sec-bg-color);
+    border-radius: 100px;
+    border: var(--thin-border);
+    padding: 14px 20px;
+}
+
+.header nav.scrolled .ul-links {
+    justify-content: center;
+    gap: 5px;
+}
+
+.header nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.header nav .logo p {
+    color: var(--title-color);
+    font-size: 1.2em;
+    transform: translateY(-2px);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Chakra Petch", "Outfit", "Poppins", sans-serif;
+}
+
+.header nav .ul-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 650px;
+    transition: all .3s ease;
+}
+
+.header nav .ul-links a {
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: var(--text-dark-light);
+
+    &:hover {
+        background-color: var(--blue-color);
+        color: var(--white-color);
+    }
+}
+
+.header nav.scrolled .logo p,
+.header nav.scrolled .ul-links a {
+    color: var(--white-color);
+}
+
+.header nav .btn-local {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header nav .btn-local .btn button {
+    color: var(--white-color);
+    position: relative;
+    width: 120px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: var(--only-dark);
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: var(--bg-gradient);
+        width: 122px;
+        height: 47px;
+        border-radius: 100px;
+        z-index: -1;
+    }
+}
+
+.header nav.scrolled .btn-local .btn button {
+    background-color: var(--white-color);
+    color: var(--only-dark);
+}
+
+.header nav.scrolled .btn-local .BtnChangeTheme .icon {
+    color: var(--white-color);
+}
