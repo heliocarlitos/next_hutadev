@@ -78,7 +78,7 @@ git push origin minha-feature
 > [!WARNING]
 > Com tempo esse projecto será privado, mas todos os contribuentes abaixo terão um espaço dentro do nosso site, onde expresaremos com carinho a nossa gradidão por contribuir no desenvolvimento deste projecto.
 
-## 🤝 Colaborador
+## Colaborador
 
 Agradecemos às seguintes pessoas que contribuíram para este projecto:
 
@@ -99,6 +99,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projecto:
 
 <div align="center">
   
-Esse projecto está sob licença do **MIT**. Veja o arquivo [LICENÇA](https://github.com/heliocarlitos/next_hutadev?tab=MIT-1-ov-file) para mais detalhes.
+Esse projecto está sob licença do **MIT**. Veja o arquivo [LICENÇA](https://github.com/heliocarlitos/next_hutadev/blob/main/LICENSE) para mais detalhes.
 
 </div>
