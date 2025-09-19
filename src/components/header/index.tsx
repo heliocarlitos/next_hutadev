@@ -112,6 +112,7 @@ export function Header() {
           <BtnShowMenuMob />
         </div>
       </nav>
-    </header>
+    </header> 
   );
 }
+
