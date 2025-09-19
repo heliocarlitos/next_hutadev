@@ -101,7 +101,6 @@
 }
 
 .header nav.scrolled .ul-links a {
-    font-weight: bold;
 
     &:hover {
         color: var(--blue-light-color);

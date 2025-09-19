@@ -64,7 +64,7 @@ export function Header() {
             className={pathname === '/servicos' ? 'active' : ''}
           >
             <Link
-              href="/servicos"
+              href="#"
               role="button"
               aria-haspopup="true"
               aria-expanded={menuOpen}

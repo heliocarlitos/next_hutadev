@@ -1,52 +1,43 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { IoMdSunny, IoMdMoon } from "react-icons/io";
-import "./index.css";
+import { useEffect, useState } from 'react';
+import { IoMdSunny, IoMdMoon } from 'react-icons/io';
+import './index.css';
 
 export function BtnChangeTheme() {
-    const [darkMode, setDarkMode] = useState<boolean | null>(null);
+  const [darkMode, setDarkMode] = useState<boolean | null>(null);
 
-    useEffect(() => {
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-        const savedTheme = localStorage.getItem("theme");
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') setDarkMode(true);
+    else if (savedTheme === 'light') setDarkMode(false);
+    else setDarkMode(true); // :root dark por padrão
+  }, []);
 
-        if (savedTheme === "dark") setDarkMode(true);
-        else if (savedTheme === "light") setDarkMode(false);
-        else setDarkMode(prefersDark.matches);
+  useEffect(() => {
+    if (darkMode === null) return;
+    if (darkMode) document.documentElement.classList.remove('light');
+    else document.documentElement.classList.add('light');
+  }, [darkMode]);
 
-        const handleSystemThemeChange = (e: MediaQueryListEvent) => {
-            if (!localStorage.getItem("theme")) setDarkMode(e.matches);
-        };
+  const toggleTheme = () => {
+    if (darkMode === null) return;
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem('theme', newMode ? 'dark' : 'light');
+    window.navigator.vibrate?.(30);
+  };
 
-        prefersDark.addEventListener("change", handleSystemThemeChange);
-        return () =>
-            prefersDark.removeEventListener("change", handleSystemThemeChange);
-    }, []);
-
-    useEffect(() => {
-        if (darkMode === null) return;
-        if (darkMode) document.documentElement.classList.add("dark");
-        else document.documentElement.classList.remove("dark");
-    }, [darkMode]);
-
-    const toggleTheme = () => {
-        if (darkMode === null) return;
-        setDarkMode(!darkMode);
-        localStorage.setItem("theme", !darkMode ? "dark" : "light");
-        window.navigator.vibrate(30);
-    };
-
-    return (
-        <div className="btnchangetheme">
-            <button aria-label="Mudar tema" onClick={toggleTheme}>
-                <span className={`icon sun ${darkMode ? "exit" : "enter"}`}>
-                    <IoMdMoon />
-                </span>
-                <span className={`icon moon ${darkMode ? "enter" : "exit"}`}>
-                    <IoMdSunny />
-                </span>
-            </button>
-        </div>
-    );
+  return (
+    <div className="btnchangetheme">
+      <button aria-label="Mudar tema" onClick={toggleTheme} type="button">
+        <span className={`icon sun ${darkMode ? 'exit' : 'enter'}`} aria-hidden>
+          <IoMdMoon />
+        </span>
+        <span className={`icon moon ${darkMode ? 'enter' : 'exit'}`} aria-hidden>
+          <IoMdSunny />
+        </span>
+      </button>
+    </div>
+  );
 }
