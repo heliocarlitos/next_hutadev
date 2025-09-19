@@ -31,6 +31,7 @@ html {
   --red-color: #ff004c;
   --white-color: #fff;
   --blue-color: #144EE3;
+  --blue-light-color: #4f74d1;
   --blue-color-hover: #24237c;
   --blue-transparent: #7977ff27;
   --gray-color: #313131;
@@ -45,15 +46,18 @@ html {
   --only-light: #fff;
   --bg-gradient: linear-gradient(45deg, var(--blue-color), var(--red-color));
   --transparent-border: 1px solid transparent;
-  --thin-border: 1px solid var(--gray-color);
+  --thin-border: 1px solid #8ebbff28;
+  --normal-shadow: -8px 8px 20px #00000014;
 }
 
 .dark {
-  --bg-color: #ffffff;
+  --bg-color: var(--white-color);
   --text-color: var(--gray-color);
   --text-dark-light: var(--only-dark);
   --title-color: var(--only-dark);
   --blue-transparent: #2600ff27;
+  --sec-bg-color: var(--white-color);
+  --thin-border: 1px solid #525f7428;
 }
 
 body {
@@ -94,12 +98,10 @@ body::-webkit-scrollbar-button:single-button:vertical:increment {
   border: 1px solid var(--real-dark);
 }
 
-/* seta para cima (preenchida) */
 body::-webkit-scrollbar-button:single-button:vertical:decrement {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='white'><path d='M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8L288 320c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z'></path></svg>");
 }
 
-/* seta para baixo (preenchida) */
 body::-webkit-scrollbar-button:single-button:vertical:increment {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='white'><path d='M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z'></path></svg>");
 }
@@ -110,12 +112,15 @@ main {
   width: 100%;
 }
 
+.icon,
 a {
   color: inherit;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  transition: .3s ease;
 }
 
 a,
@@ -152,4 +157,9 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  color: var(--text-dark-light);
+  font-weight: bold;
 }

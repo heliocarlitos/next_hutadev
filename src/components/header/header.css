@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     transition: transform .3s ease, opacity .3s ease;
+    z-index: 9999;
 }
 
 .header.scrolled {
@@ -37,7 +38,7 @@
 
 .header nav.scrolled {
     width: 1000px;
-    background-color: var(--sec-bg-color);
+    background-color: var(--only-dark);
     border: var(--thin-border);
     margin-inline: 20px;
 }
@@ -81,14 +82,31 @@
     color: var(--text-dark-light);
 
     &:hover {
-        background-color: var(--blue-color);
-        color: var(--white-color);
+        color: var(--blue-light-color);
     }
+}
+
+.header nav .ul-links a .icon.rotated {
+    transform: perspective(30px) rotateX(180deg);
 }
 
 .header nav.scrolled .logo p,
 .header nav.scrolled .ul-links a {
     color: var(--white-color);
+}
+
+.header nav.scrolled .ul-links a {
+    font-weight: bold;
+
+    &:hover {
+        color: var(--blue-light-color);
+    }
+}
+
+.header nav .ul-links a.active {
+    color: var(--blue-light-color);
+    background-color: var(--blue-transparent);
+    border: var(--thin-border);
 }
 
 .header nav .btn-local {
