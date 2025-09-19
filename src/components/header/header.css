@@ -57,6 +57,10 @@
     &:hover {
         opacity: .8;
     }
+
+    &:focus {
+        border-radius: 5px;
+    }
 }
 
 .header nav .logo p {
