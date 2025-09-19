@@ -12,6 +12,7 @@
     align-items: center;
     transition: transform .3s ease, opacity .3s ease;
     z-index: 9999;
+    user-select: none;
 }
 
 .header.scrolled {
@@ -106,7 +107,7 @@
 .header nav .ul-links a.active {
     color: var(--blue-light-color);
     background-color: var(--blue-transparent);
-    border: var(--thin-border);
+    border: 1px solid var(--blue-color);
 }
 
 .header nav .btn-local {

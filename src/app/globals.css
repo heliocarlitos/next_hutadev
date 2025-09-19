@@ -126,11 +126,11 @@ a {
 a,
 button {
   outline: 0;
-  border: 0;
+  border: 1px solid transparent;
   transition: .2s ease;
 
   &:focus {
-    outline: 1px solid var(--blue-color);
+    border: 1px solid var(--blue-color);
   }
 }
 

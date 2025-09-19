@@ -55,16 +55,18 @@
     align-items: start;
     gap: 10px;
     padding: 0;
-    border-radius: 0;
+    border-radius: 5px;
 
     &:focus {
         outline: 0;
+        border: 1px solid transparent;
     }
 
     &:hover .icon {
         transform: none;
     }
 
+    &:focus .title,
     &:hover .title {
         color: var(--blue-light-color);
     }
@@ -94,22 +96,24 @@
     padding: 20px 20px 20px 0;
 }
 
+.desktop_menu .box-link .footer a {
+    padding: 0;
+    border-radius: 5px;
+
+    &:hover .icon {
+        transform: none;
+    }
+}
+
 .desktop_menu .box-link .footer .pricing {
     background-color: var(--blue-color);
     border-radius: 5px;
     padding: 10px 20px;
     color: var(--white-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: var(--blue-color-hover);
-    }
-}
-
-.desktop_menu .box-link .footer a {
-    padding: 0;
-
-    &:hover .icon {
-        transform: none;
     }
 }
 
@@ -126,8 +130,10 @@
 
 .desktop_menu .important-link ul li a {
     padding: 0;
-    color: var(--blue-light-color);
+    color: var(--blue-light-color) !important;
     text-wrap: nowrap;
+    border-radius: 5px;
+    font-weight: normal !important;
 
     &:hover {
         text-decoration: underline;
