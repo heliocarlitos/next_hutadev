@@ -22,10 +22,10 @@ Este projecto consiste na actualização do site da [Hutauta Developer](https://
 
 ## Tecnologias Utilizadas
 
--   **Next.js**
--   **React**
--   **TypeScript**
--   **Vercel (deploy)**
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Vercel (deploy)**
 
 ## Instalação e Uso
 
