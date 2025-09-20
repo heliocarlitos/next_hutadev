@@ -38,9 +38,19 @@ cd next_hutadev
 
 ### Instale as dependências
 
+1. Instale o pacote NPM
+
 ```bash
 npm i
 ```
+
+2. Biblioteca de ícones
+
+```bash
+npm install react-icons
+```
+
+Documentação da biblioteca [aqui](https://react-icons.github.io/react-icons/).
 
 ## Contribuindo
 
