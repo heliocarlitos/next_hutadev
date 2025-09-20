@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BtnChangeTheme } from '../btn/btnchangetheme';
 import { BtnShowMenuMob } from '../btn/btnshowmenumob';
-import { Desktop_Menu } from './(megamenu)/desktop/desktop';
+import { Servicos } from './(megamenu)/servicos';
+import { Produtos } from './(megamenu)/produtos';
 import { FaCaretDown } from 'react-icons/fa';
 import './header.css';
 
@@ -14,7 +15,7 @@ export function Header() {
   const [hidden, setHidden] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
 
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -30,14 +31,14 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScroll]);
 
-  const handleMouseEnter = () => setMenuOpen(true);
-  const handleMouseLeave = () => setMenuOpen(false);
-  const handleMenuLinkClick = () => setMenuOpen(false);
+  const handleMouseEnter = (menu: string) => setOpenMenu(menu);
+  const handleMouseLeave = () => setOpenMenu(null);
+  const handleMenuLinkClick = () => setOpenMenu(null);
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>, menu: string) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      setMenuOpen((prev) => !prev);
+      setOpenMenu(openMenu === menu ? null : menu);
     }
   };
 
@@ -58,8 +59,9 @@ export function Header() {
             </Link>
           </li>
 
+          {/* Serviços */}
           <li
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => handleMouseEnter('servicos')}
             onMouseLeave={handleMouseLeave}
             className={pathname === '/servicos' ? 'active' : ''}
           >
@@ -67,22 +69,38 @@ export function Header() {
               href="#"
               role="button"
               aria-haspopup="true"
-              aria-expanded={menuOpen}
-              onKeyDown={handleKeyDown}
+              aria-expanded={openMenu === 'servicos'}
+              onKeyDown={(e) => handleKeyDown(e, 'servicos')}
             >
               Serviços
-              <div className={`icon ${menuOpen ? 'rotated' : ''}`}>
+              <div className={`icon ${openMenu === 'servicos' ? 'rotated' : ''}`}>
                 <FaCaretDown />
               </div>
             </Link>
 
-            {menuOpen && <Desktop_Menu onLinkClick={handleMenuLinkClick} />}
+            {openMenu === 'servicos' && <Servicos onLinkClick={handleMenuLinkClick} />}
           </li>
 
-          <li>
-            <Link href="/produtos" className={pathname === '/produtos' ? 'active' : ''}>
+          {/* Produtos */}
+          <li
+            onMouseEnter={() => handleMouseEnter('produtos')}
+            onMouseLeave={handleMouseLeave}
+            className={pathname === '/produtos' ? 'active' : ''}
+          >
+            <Link
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded={openMenu === 'produtos'}
+              onKeyDown={(e) => handleKeyDown(e, 'produtos')}
+            >
               Produtos
+              <div className={`icon ${openMenu === 'produtos' ? 'rotated' : ''}`}>
+                <FaCaretDown />
+              </div>
             </Link>
+
+            {openMenu === 'produtos' && <Produtos onLinkClick={handleMenuLinkClick} />}
           </li>
 
           <li>
@@ -112,7 +130,6 @@ export function Header() {
           <BtnShowMenuMob />
         </div>
       </nav>
-    </header> 
+    </header>
   );
 }
-

@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { IoMdSunny, IoMdMoon } from 'react-icons/io';
 import './index.css';
-
 export function BtnChangeTheme() {
   const [darkMode, setDarkMode] = useState<boolean | null>(null);
 
@@ -29,6 +28,7 @@ export function BtnChangeTheme() {
   };
 
   return (
+    
     <div className="btnchangetheme">
       <button aria-label="Mudar tema" onClick={toggleTheme} type="button">
         <span className={`icon sun ${darkMode ? 'exit' : 'enter'}`} aria-hidden>

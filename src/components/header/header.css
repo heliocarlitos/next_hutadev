@@ -1,18 +1,18 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    position: fixed;
+    right: 0;
+    top: 0;
     transition: transform .3s ease, opacity .3s ease;
-    z-index: 9999;
     user-select: none;
+    width: 100%;
+    z-index: 9999;
 }
 
 .header.scrolled {
@@ -20,38 +20,38 @@
 }
 
 .header.hidden {
-    transform: translateY(-30%);
     opacity: 0;
+    transform: translateY(-30%);
 }
 
 .header nav {
-    display: flex;
-    padding: 14px 20px;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    width: 100%;
-    transition: all .3s ease;
     border: var(--transparent-border);
-    margin-top: 20px;
     border-radius: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 14px 20px;
+    transition: all .3s ease;
+    width: 100%;
 }
 
 .header nav.scrolled {
-    width: 1000px;
     background-color: var(--only-dark);
     border: var(--thin-border);
     margin-inline: 20px;
+    width: 1000px;
 }
 
 .header nav.scrolled .ul-links {
-    justify-content: center;
     gap: 5px;
+    justify-content: center;
 }
 
 .header nav .logo {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 10px;
 
     &:hover {
@@ -65,26 +65,26 @@
 
 .header nav .logo p {
     color: var(--title-color);
+    font-family: "Chakra Petch", "Outfit", "Poppins", sans-serif;
     font-size: 1.2em;
-    transform: translateY(-2px);
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "Chakra Petch", "Outfit", "Poppins", sans-serif;
+    transform: translateY(-2px);
 }
 
 .header nav .ul-links {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
     max-width: 650px;
     transition: all .3s ease;
+    width: 100%;
 }
 
 .header nav .ul-links a {
-    padding: 10px 15px;
     border-radius: 100px;
     color: var(--text-dark-light);
+    padding: 10px 15px;
 
     &:hover {
         color: var(--blue-light-color);
@@ -108,33 +108,33 @@
 }
 
 .header nav .ul-links a.active {
-    color: var(--blue-light-color);
     background-color: var(--blue-transparent);
     border: 1px solid var(--blue-color);
+    color: var(--blue-light-color);
 }
 
 .header nav .btn-local {
+    align-items: center;
+    align-items: center;
     display: flex;
-    align-items: center;
-    align-items: center;
     gap: 10px;
 }
 
 .header nav .btn-local .btn .creat-count {
+    background-color: var(--only-dark);
+    border-radius: 100px;
     color: var(--white-color);
+    height: 45px;
     position: relative;
     width: 120px;
-    height: 45px;
-    border-radius: 100px;
-    background-color: var(--only-dark);
 
     &::after {
-        content: "";
-        position: absolute;
         background-image: var(--bg-gradient);
-        width: 122px;
-        height: 47px;
         border-radius: 100px;
+        content: "";
+        height: 47px;
+        position: absolute;
+        width: 122px;
         z-index: -1;
     }
 }

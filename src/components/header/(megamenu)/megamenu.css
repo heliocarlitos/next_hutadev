@@ -1,4 +1,4 @@
-.desktop_menu {
+.mega_menu {
     position: absolute;
     display: flex;
     background-color: var(--sec-bg-color);
@@ -9,14 +9,15 @@
     border: var(--thin-border);
     box-shadow: var(--normal-shadow);
     transform: translateX(-270px);
-    transition: .2s ease;
+    transition: .3s ease;
 
     & a {
         justify-content: left;
     }
 }
 
-.cone {
+.cone,
+.cone_produto {
     display: flex;
     justify-content: center;
 
@@ -33,25 +34,75 @@
     }
 }
 
-.desktop_menu .box-link {
+.cone_produto {
+    &::after {
+        transform: translateY(-9px) translateX(-15px) rotate(45deg);
+    }
+}
+
+.mega_menu_produtos {
+    width: 450px;
+    padding: 25px;
+    transform: translateX(-160px);
+}
+
+.mega_menu .box-link {
+    border-right: var(--thin-border);
     display: flex;
     flex-direction: column;
-    border-right: var(--thin-border);
     padding: 25px 0 0 25px;
     gap: 20px;
 }
 
-.desktop_menu .box-link .box-ul {
+.mega_menu_produtos .box-link {
+    border-right: 0;
+    padding: 0;
+}
+
+.mega_menu .box-link .box-ul {
     display: flex;
 }
 
-.desktop_menu .box-link .box-ul ul {
+.mega_menu .box-link .box-ul ul {
     display: flex;
     flex-direction: column;
     padding-right: 10px;
 }
 
-.desktop_menu .box-link .box-ul ul li a {
+.mega_menu_produtos .box-link .box-ul ul {
+    padding: 0;
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos {
+    /* background-color: red; */
+    padding: 20px;
+    border-radius: 10px;
+    border: var(--thin-border);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 150px;
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos a {
+    padding: 15px;
+    justify-content: center;
+    color: var(--white-color);
+    font-weight: bold;
+    border-radius: 100px;
+    width: 100%;
+    background-color: var(--only-bg);
+    font-family: "Fira Code", "Chakra Petch", "Outfit", "Poppins", sans-serif;
+    letter-spacing: 1.5px;
+    transition: .3s ease;
+
+    &:hover {
+        letter-spacing: 2px;
+        border: 1px solid var(--blue-color);
+    }
+}
+
+.mega_menu .box-link .box-ul ul li a {
     align-items: start;
     gap: 10px;
     padding: 0;
@@ -72,23 +123,23 @@
     }
 }
 
-.desktop_menu .box-link .box-ul ul li a .icon {
+.mega_menu .box-link .box-ul ul li a .icon {
     background-color: var(--blue-transparent);
     padding: 10px;
     border-radius: 5px;
     color: var(--blue-light-color);
 }
 
-.desktop_menu .box-link .box-ul ul li a .title {
+.mega_menu .box-link .box-ul ul li a .title {
     margin-bottom: 10px;
 }
 
-.desktop_menu .box-link .box-ul ul li a .text {
+.mega_menu .box-link .box-ul ul li a .text {
     color: var(--text-color);
     font-weight: 400;
 }
 
-.desktop_menu .box-link .footer {
+.mega_menu .box-link .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +147,7 @@
     padding: 20px 20px 20px 0;
 }
 
-.desktop_menu .box-link .footer a {
+.mega_menu .box-link .footer a {
     padding: 0;
     border-radius: 5px;
 
@@ -105,7 +156,7 @@
     }
 }
 
-.desktop_menu .box-link .footer .pricing {
+.mega_menu .box-link .footer .pricing {
     background-color: var(--blue-color);
     border-radius: 5px;
     padding: 10px 20px;
@@ -117,18 +168,18 @@
     }
 }
 
-.desktop_menu .important-link {
+.mega_menu .important-link {
     padding: 25px;
 }
 
-.desktop_menu .important-link ul {
+.mega_menu .important-link ul {
     gap: 10px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 
-.desktop_menu .important-link ul li a {
+.mega_menu .important-link ul li a {
     padding: 0;
     color: var(--blue-light-color) !important;
     text-wrap: nowrap;
@@ -141,10 +192,21 @@
 }
 
 @media (max-width: 1125px) {
-    .desktop_menu {
+    .mega_menu {
         transform: none;
         right: 0;
         max-width: 97%;
         margin-left: 50px;
+    }
+
+    .mega_menu_produtos {
+        max-width: 450px;
+        transform: translateX(-350px);
+    }
+
+    .cone_produto {
+        &::after {
+            transform: translateY(-9px) translateX(25px) rotate(45deg);
+        }
     }
 }
