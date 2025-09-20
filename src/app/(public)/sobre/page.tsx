@@ -1,7 +1,7 @@
 export default function Sobre() {
     return (
         <>
-            <h1>Sobre</h1>
+            {/* <h1>Sobre</h1> */}
         </>
     );
 }
