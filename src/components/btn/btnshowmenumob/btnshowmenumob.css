@@ -16,7 +16,7 @@
     outline: none;
 
     &:focus {
-        background-color: var(--blue-transparent);
+        border: 0;
     }
 }
 
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .btnshowmenumob .icon-menu:focus {
         background-color: transparent;
     }

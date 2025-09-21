@@ -1,14 +1,6 @@
 import Link from 'next/link';
 import './megamenu.css';
-import {
-  IoIosCode,
-  IoMdTv,
-  IoIosSearch,
-  IoLogoBuffer,
-  IoIosMegaphone,
-  IoIosRocket,
-  IoIosHelpCircleOutline,
-} from 'react-icons/io';
+import { IoDesktop, IoLayers, IoMegaphone, IoSearch , IoCodeSharp,IoRocketSharp , IoHelp } from "react-icons/io5";
 
 interface DesktopMenuProps {
   onLinkClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
@@ -23,7 +15,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoMdTv />
+                  <IoDesktop />
                 </div>
                 <div className="detal-link">
                   <p className="title"> Criação de sites </p>
@@ -35,7 +27,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoIosCode />
+                  <IoCodeSharp  />
                 </div>
                 <div className="detal-link">
                   <p className="title"> Manutenção de sites </p>
@@ -47,7 +39,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoIosSearch />
+                  <IoSearch />
                 </div>
                 <div className="detal-link">
                   <p className="title"> SEO </p>
@@ -61,7 +53,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoLogoBuffer />
+                  <IoLayers />
                 </div>
                 <div className="detal-link">
                   <p className="title"> Consultoria de Design </p>
@@ -73,7 +65,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoIosMegaphone />
+                  <IoMegaphone />
                 </div>
                 <div className="detal-link">
                   <p className="title"> Marketing Digital </p>
@@ -85,7 +77,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
             <li>
               <Link href="#" onClick={onLinkClick}>
                 <div className="icon">
-                  <IoIosRocket />
+                  <IoRocketSharp />
                 </div>
                 <div className="detal-link">
                   <p className="title"> Automação de Processos </p>
@@ -99,7 +91,7 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
         <div className="footer">
           <Link href="#" className="faq">
             <div className="icon">
-              <IoIosHelpCircleOutline />
+              <IoHelp />
             </div>
             Perguntas frequentes
           </Link>

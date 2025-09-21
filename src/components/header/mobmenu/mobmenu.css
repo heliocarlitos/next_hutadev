@@ -1,0 +1,151 @@
+.pano {
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #00000025;
+    backdrop-filter: blur(4px);
+}
+.mobmenu {
+    width: 0;
+    max-width: 400px !important;
+    border-radius: 0 !important;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 20px 0 !important;
+    display: flex;
+    align-items: start !important;
+    background-color: var(--sec-bg-color);
+    box-shadow: var(--normal-shadow);
+    height: 100dvh;
+    z-index: -1;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(100%);
+}
+.mobmenu.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+.mobmenu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    transform: translateY(90px);
+}
+.mobmenu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 30px;
+    gap: 10px;
+    color: var(--text-dark-light);
+    &:hover,
+    &:focus {
+        background-color: var(--blue-transparent);
+        border: 1px solid transparent;
+    }
+}
+.mobmenu ul li a .link-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobmenu ul li a.active,
+.mobmenu ul li .submenu a.active {
+    background-color: var(--blue-transparent);
+}
+.mobmenu ul li .creat-count {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 330px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--only-dark);
+    border-radius: 100px;
+    color: var(--white-color);
+    &::after {
+        background-image: var(--bg-gradient);
+        border-radius: 100px;
+        content: "";
+        height: 52px;
+        position: absolute;
+        width: 332px;
+        z-index: -1;
+    }
+}
+.mobmenu ul li .c-icon svg {
+    font-size: 1.1em;
+}
+
+.submenu {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: max-height 0.3s ease;
+    gap: 30px !important;
+    overflow: hidden;
+}
+
+.submenu.show {
+    max-height: 250px;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.submenu a {
+    padding-left: 50px !important;
+    font-size: 0.95rem;
+    color: var(--text-dark-light);
+    &:hover,
+    &:focus {
+        background-color: transparent !important;
+    }
+    &:hover .title,
+    &:focus .title {
+        color: var(--blue-light-color);
+    }
+}
+.submenu a .icon {
+    background-color: var(--blue-transparent);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--blue-light-color);
+}
+.submenu a .icon svg {
+    font-size: 1.1em;
+}
+.submenu a .text {
+    color: var(--text-color);
+}
+.submenu a:hover {
+    background-color: var(--blue-transparent);
+}
+
+@media (min-width: 1040px) {
+    .pano,
+    .mobmenu {
+        display: none !important;
+    }
+}
+@media (max-width: 420px) {
+    .mobmenu {
+        top: -50px;
+        height: 110dvh;
+        max-width: 100% !important;
+    }
+}
+@media (max-height: 915px) {
+    .mobmenu {
+        overflow-y: auto;
+        padding-bottom: 150px !important;
+    }
+}

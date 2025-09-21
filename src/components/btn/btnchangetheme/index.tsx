@@ -10,7 +10,7 @@ export function BtnChangeTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') setDarkMode(true);
     else if (savedTheme === 'light') setDarkMode(false);
-    else setDarkMode(true); // :root dark por padrão
+    else setDarkMode(true);
   }, []);
 
   useEffect(() => {
