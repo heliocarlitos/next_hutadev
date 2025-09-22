@@ -30,21 +30,21 @@ html {
 :root {
   --red-color: #ff004c;
   --white-color: #fff;
-  --blue-color: #144EE3;
-  --blue-light-color: #4f74d1;
+  --blue-color: #1650eb;
+  --blue-light-color: #6095db;
   --blue-color-hover: #24237c;
   --blue-transparent: #7977ff27;
   --lilac-color: #725CFF;
   --gray-color: #313131;
-  --real-gray: #9F9F9F;
+  --real-gray: #6d6d6d;
   --real-dark: #2C2C2C;
   --text-color: #c6c6c6;
   --text-dark-light: var(--only-light);
   --title-color: var(--white-color);
-  --bg-color: #0a0f1a;
+  --bg-color: #020218;
   --sec-bg-color: #13161F;
-  --only-bg: #0a0f1a;
-  --only-dark: #13161F;
+  --only-bg: #020218;
+  --only-dark: #030609;
   --only-light: #fff;
   --bg-gradient: linear-gradient(45deg, var(--blue-color), var(--red-color));
   --transparent-border: 1px solid transparent;
