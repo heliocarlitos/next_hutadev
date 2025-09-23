@@ -30,6 +30,7 @@ html {
 :root {
   --red-color: #ff004c;
   --white-color: #fff;
+  --black-color: #09090B;
   --blue-color: #1650eb;
   --blue-light-color: #6095db;
   --blue-color-hover: #24237c;
@@ -39,13 +40,13 @@ html {
   --real-gray: #6d6d6d;
   --real-dark: #2C2C2C;
   --text-color: #c6c6c6;
-  --text-dark-light: var(--only-light);
+  --text-dark-light: var(--white-color);
+  --bg-dark-light: var(--only-bg);
   --title-color: var(--white-color);
-  --bg-color: #020218;
-  --sec-bg-color: #13161F;
-  --only-bg: #020218;
-  --only-dark: #030609;
-  --only-light: #fff;
+  --bg-color: #09090B;
+  --sec-bg-color: #18181B;
+  --only-sec-bg-color: #18181B;
+  --bg-submenu:var(--only-sec-bg-color);
   --bg-gradient: linear-gradient(45deg, var(--blue-color), var(--red-color));
   --transparent-border: 1px solid transparent;
   --thin-border: 1px solid #8ebbff28;
@@ -53,10 +54,12 @@ html {
 }
 
 .light {
+    --bg-submenu: var(--white-color);
   --bg-color: var(--white-color);
   --text-color: var(--gray-color);
-  --text-dark-light: var(--only-dark);
-  --title-color: var(--only-dark);
+  --text-dark-light: var(--black-color);
+  --bg-dark-light: var(--black-color);
+  --title-color: var(--black-color);
   --blue-transparent: #2600ff27;
   --sec-bg-color: var(--white-color);
   --thin-border: 1px solid #525f7428;
