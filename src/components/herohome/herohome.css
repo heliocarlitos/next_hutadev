@@ -59,12 +59,12 @@
     display: none;
 }
 
-html:not(.light) .herohome .banner img.dark { 
-  display: block;
+html:not(.light) .herohome .banner img.dark {
+    display: block;
 }
 
 html.light .herohome .banner img.light {
-  display: block;
+    display: block;
 }
 
 @media (max-width: 550px) {
