@@ -38,7 +38,7 @@
 }
 
 .header nav.scrolled {
-    background-color: var(--only-sec-bg-color);
+    background-color: var(--scroll-nav);
     border: var(--thin-border);
     margin-inline: 20px;
     width: 1000px;

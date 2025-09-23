@@ -1,0 +1,103 @@
+.herohome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    margin-top: 170px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+.herohome .title {
+    font-size: 2.5rem;
+    max-width: 660px;
+}
+.herohome .text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 1.6;
+}
+.herohome button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 20px 30px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    gap: 10px;
+    &:focus {
+        border: 2px solid var(--text-dark-light);
+    }
+}
+.herohome .tecnology {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+}
+.herohome .tecnology .icon {
+    padding: 15px;
+    border-radius: 100px;
+    background-color: var(--black-soft);
+    color: var(--white-color);
+}
+.herohome .tecnology .icon svg {
+    font-size: 1.7em;
+}
+.herohome .banner {
+    background-color: var(--black-soft);
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.herohome .banner img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+html:not(.light) .herohome .banner img.dark { 
+  display: block;
+}
+
+html.light .herohome .banner img.light {
+  display: block;
+}
+
+@media (max-width: 550px) {
+    .herohome {
+        gap: 30px;
+        margin-top: 120px;
+    }
+    .herohome .title {
+        font-size: 1.8rem;
+    }
+    .herohome .text {
+        font-size: 1rem;
+    }
+    .herohome button {
+        padding: 15px 25px;
+    }
+
+    .herohome .tecnology .icon svg {
+        font-size: 1.3em;
+    }
+    .herohome .banner {
+        border-radius: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .herohome .banner {
+        border-radius: 10px;
+    }
+}
+@media (max-width: 372px) {
+    .herohome .tecnology {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
