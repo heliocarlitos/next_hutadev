@@ -50,6 +50,7 @@
   background-color: var(--black-soft);
   color: var(--white-color);
   position: relative;
+  z-index: 1;
   &:hover::after {
     top: -33px;
     opacity: 1;
