@@ -17,6 +17,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "postcss-sorting": "^9.1.0",
     "typescript": "^5"
   }
 }

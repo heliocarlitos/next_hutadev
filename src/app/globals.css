@@ -118,12 +118,14 @@ main {
     margin-top: 100px;
     width: 100%;
 }
+
 figure {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     user-select: none;
+
     &::after {
         position: absolute;
         content: "";
@@ -131,6 +133,7 @@ figure {
         height: 100%;
     }
 }
+
 .icon,
 a {
     align-items: center;
@@ -183,6 +186,7 @@ svg {
     font-weight: bold;
     line-height: 1.2;
 }
+
 .gradient-text {
     background: linear-gradient(90deg, var(--blue-color), var(--red-color));
     -webkit-background-clip: text;
