@@ -79,7 +79,7 @@
   font-family: "Fira Code", "Chakra Petch", "Outfit", sans-serif;
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .tambpro .intro .pre-text {
     margin-bottom: 10px;
   }
