@@ -45,13 +45,14 @@ html {
   --title-color: var(--white-color);
   --bg-color: #09090b;
   --sec-bg-color: #18181b;
+  --sec-bg-transparent:var(--scroll-nav);
   --only-sec-bg-color: #18181b;
   --black-soft: #27272a;
   --bg-submenu: var(--only-sec-bg-color);
   --bg-gradient: linear-gradient(45deg, var(--blue-color), var(--red-color));
   --transparent-border: 1px solid transparent;
   --thin-border: 1px solid #8ebbff28;
-  --thin: 1px solid #747474;
+  --border: 1px solid #747474;
   --normal-shadow: -8px 8px 20px #00000014;
   --scroll-nav: #18181bef;
 }
@@ -65,6 +66,7 @@ html {
   --title-color: var(--black-color);
   --blue-transparent: #2600ff27;
   --sec-bg-color: var(--white-color);
+  --sec-bg-transparent: #ffffffcb;
   --thin-border: 1px solid #525f7428;
 }
 
@@ -115,9 +117,12 @@ body::-webkit-scrollbar-button:single-button:vertical:increment {
 }
 
 main {
-  /* height: 500dvh; */
   margin-top: 100px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 50px;
 }
 
 figure {
@@ -202,29 +207,30 @@ svg {
   &::before {
     position: absolute;
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     background-color: var(--text-dark-light);
   }
 }
 
 .dot-top {
   &::after {
-    top: -3px;
-    left: -3px;
+    top: -2px;
+    left: -2px;
   }
   &::before {
-    top: -3px;
-    right: -3px;
+    top: -2px;
+    right: -2px;
   }
 }
 .dot-bottom {
   &::after {
-    bottom: -3px;
-    left: -3px;
+    bottom: -2px;
+    left: -2px;
   }
   &::before {
-    bottom: -3px;
-    right: -3px;
+    bottom: -2px;
+    right: -2px;
   }
 }
+

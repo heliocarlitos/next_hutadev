@@ -1,0 +1,101 @@
+.tambpro {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.tambpro .intro {
+  max-width: 500px;
+}
+.tambpro .intro .pre-text {
+  position: relative;
+  display: inline-flex;
+  padding: 5px 10px;
+  border: var(--border);
+  & p {
+    font-family: "Fira Code";
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    max-width: 500px;
+    text-transform: uppercase;
+    color: var(--lilac-color);
+  }
+}
+.tambpro .intro .title,
+.tambpro .intro .title span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.tambpro .intro .title span {
+  color: var(--lilac-color);
+}
+.tambpro .intro .text {
+  margin-top: 20px;
+  & span {
+    color: var(--text-dark-light);
+  }
+}
+.tambpro .box-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+.tambpro .box-card .card {
+  background-color: var(--sec-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  border: var(--thin-border);
+  border-radius: 25px;
+  box-shadow: var(--normal-shadow);
+  overflow: hidden;
+}
+.tambpro .box-card .card figure {
+  width: 100%;
+  background-image: url("/image/relative/grid_png.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-shadow: inset 0 0 10px 14px var(--sec-bg-color);
+}
+.tambpro .box-card .card img {
+  width: 100%;
+  height: auto;
+  max-height: 240px;
+  border-radius: 10px;
+  background-color: var(--sec-bg-color);
+  border: var(--thin-border);
+  padding: 20px 10px;
+}
+.tambpro .box-card .card .content {
+  padding: 20px;
+}
+.tambpro .box-card .card .content .title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+  .tambpro .intro .pre-text {
+    margin-bottom: 10px;
+  }
+  .tambpro .intro .title,
+  .tambpro .intro .title span {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  .tambpro .intro .text {
+    margin-top: 10px;
+  }
+  .tambpro .box-card {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  .tambpro .box-card .card {
+    border-radius: 15px;
+  }
+  .tambpro .box-card .card .content {
+    padding: 10px 20px 20px 20px;
+  }
+}
