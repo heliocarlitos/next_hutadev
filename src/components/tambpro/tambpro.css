@@ -92,7 +92,7 @@
     margin-top: 10px;
   }
   .tambpro .box-card {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .tambpro .box-card .card {
     border-radius: 15px;
