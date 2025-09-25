@@ -75,6 +75,7 @@
 .tambpro .box-card .card .content .title {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  color: var(--lilac-color);
 }
 
 @media (max-width: 400px) {
