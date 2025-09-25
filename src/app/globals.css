@@ -191,6 +191,7 @@ svg {
   color: var(--text-dark-light);
   font-weight: bold;
   line-height: 1.2;
+  font-family: "Chakra Petch", "Outfit",  sans-serif;
 }
 
 .gradient-text {

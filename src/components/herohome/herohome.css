@@ -98,6 +98,7 @@
   width: 100%;
   border-radius: 30px;
   overflow: hidden;
+  border: var(--thin-border);
 }
 
 .herohome .banner img {

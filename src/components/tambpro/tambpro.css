@@ -76,6 +76,7 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
   color: var(--lilac-color);
+  font-family: "Fira Code", "Chakra Petch", "Outfit",  sans-serif;
 }
 
 @media (max-width: 400px) {
