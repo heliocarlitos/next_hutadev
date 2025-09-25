@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./tambpro.css";
 export function TambPro() {
   return (
