@@ -11,22 +11,20 @@
   padding-top: 170px;
   transition: all 0.3s ease;
 }
-
 .herohome .bg-img {
   position: absolute;
   top: 0;
   z-index: -9999;
   overflow: hidden;
   width: 100%;
-  max-width: 1900px;
   height: 100%;
+  left: 0;
 }
 
 .herohome .bg-img img {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 1920px;
   height: auto;
 }
 .herohome .bg-img .solid {
