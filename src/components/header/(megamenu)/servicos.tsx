@@ -43,8 +43,8 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
                                 </div>
                                 <div className="detal-link">
                                     <p className="title">
-                                        {" "}
-                                        Manutenção de sites{" "}
+                                        
+                                        Manutenção de sites
                                     </p>
                                     <p className="text">
                                         Actualização, segurança, performance,
@@ -78,8 +78,8 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
                                 </div>
                                 <div className="detal-link">
                                     <p className="title">
-                                        {" "}
-                                        Consultoria de Design{" "}
+                                        
+                                        Consultoria de Design
                                     </p>
                                     <p className="text">
                                         Branding, identidade, layout, cores,
@@ -111,8 +111,8 @@ export function Servicos({ onLinkClick }: DesktopMenuProps) {
                                 </div>
                                 <div className="detal-link">
                                     <p className="title">
-                                        {" "}
-                                        Automação de Processos{" "}
+                                        
+                                        Automação de Processos
                                     </p>
                                     <p className="text">
                                         Workflows, eficiência, integração,

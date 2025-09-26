@@ -1,0 +1,135 @@
+.aplication {
+  padding: 0 20px;
+  position: relative;
+}
+.aplication .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+  max-width: 700px;
+  margin: auto;
+}
+.aplication .intro .app-title {
+  margin: auto;
+  border: var(--thin-border);
+  width: 130px;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: var(--gray-transparent);
+  color: var(--text-dark-light);
+  text-transform: uppercase;
+  font-family: "Chakra Petch", "Outfit", sans-serif;
+  font-weight: bold;
+}
+.aplication .intro .title {
+  font-size: 2rem;
+  max-width: 700px;
+}
+.aplication .img {
+  z-index: -9999;
+  position: absolute;
+  transform: translateY(-60px);
+  display: flex;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.aplication .img img {
+  width: 1300px;
+  height: auto;
+}
+.aplication .box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.aplication .box-content .box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 3px;
+}
+.aplication .box-content .box .box-item {
+  display: flex;
+  align-items: self-start;
+  width: 100%;
+  height: 100px;
+}
+.aplication .box-content .box .box-item .icon {
+  background-color: var(--lilac-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  & svg {
+    color: var(--white-color);
+    font-size: 2.5em;
+  }
+}
+.aplication .box-content .box .box-item .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.aplication .box-content .box .box-item .blue {
+  background-color: var(--blue-color);
+}
+.aplication .box-content .box .box-item .yellow {
+  background-color: var(--yellow-color);
+  width: 15px;
+  height: 15px;
+}
+.aplication .box-content .box .box-item .green {
+  background-color: var(--green-light);
+}
+.aplication .box-content .box .box-item .orange {
+  background-color: var(--orange-color);
+  width: 30px;
+  height: 30px;
+}
+.aplication .box-content .box .box-item .blue {
+  background-color: var(--blue-color);
+}
+@media screen and (max-width: 600px) {
+  .aplication .intro .title {
+    font-size: 1.5rem;
+  }
+  .aplication .box-content {
+    margin-top: 30px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .aplication .img {
+    transform: translateY(-140px);
+  }
+  .aplication .box-content .box .box-item .icon {
+    width: 60px;
+    height: 60px;
+    & svg {
+      font-size: 2em;
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .aplication .box-content .box {
+    justify-content: s;
+  }
+  .aplication .box-content .box .box-item {
+    height: 60px;
+    width: 60px;
+  }
+  .aplication .box-content .box .hidden {
+    display: none;
+  }
+}

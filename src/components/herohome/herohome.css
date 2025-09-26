@@ -123,6 +123,7 @@
 
 .herohome .banner img {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   display: none;
 }
@@ -135,6 +136,30 @@ html.light .herohome .banner img.light {
   display: block;
 }
 
+.herohome .cumpany {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--black-color);
+  margin-top: -20px;
+  border-radius: 20px;
+  padding: 30px;
+  border: var(--thin-border);
+  gap: 10px;
+  display: none;
+}
+.herohome .cumpany figure {
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(110%);
+  }
+}
+.herohome .cumpany img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
 @media (max-width: 550px) {
   .herohome {
     gap: 30px;

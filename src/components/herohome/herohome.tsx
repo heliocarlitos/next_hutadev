@@ -93,6 +93,28 @@ export function HeroHome() {
             />
           </figure>
         </div>
+
+        <div className="cumpany">
+          <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+           <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+           <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+           <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+           <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+           <figure>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/laravel-logo-white.svg" alt="Empresa" width={200} height={60} />
+          </figure>
+    
+        </div>
       </div>
     </>
   );
