@@ -71,6 +71,22 @@ export function TambPro() {
               </p>
             </div>
           </div>
+            <div className="card">
+            <figure>
+              <img
+                src="image/relative/undraw_gift_box.svg"
+                alt="Capa"
+                width={300}
+                height={500}
+              />
+            </figure>
+            <div className="content">
+              <p className="title">Nossos presentes</p>
+              <p className="text">
+                Sistemas operacionais, programas, agentes de inteligência artificial e templates modernos.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
