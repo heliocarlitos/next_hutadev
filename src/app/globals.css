@@ -32,6 +32,7 @@ html {
   color: var(--white-color);
   opacity: 1;
 }
+
 ::-moz-selection {
   background-color: var(--lilac-color);
   color: var(--white-color);
@@ -53,7 +54,7 @@ html {
   --text-color: #c6c6c6;
   --text-dark-light: var(--white-color);
   --bg-dark-light: var(--only-bg);
-  --bg-dark-light-transparent:#18181bef;
+  --bg-dark-light-transparent: #18181bef;
   --title-color: var(--white-color);
   --bg-color: #09090b;
   --sec-bg-color: #18181b;
