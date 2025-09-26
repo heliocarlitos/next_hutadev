@@ -13,6 +13,24 @@ export function HeroHome() {
   return (
     <>
       <div className="herohome">
+        <div className="bg-img">
+          <figure>
+            <img
+              className="neon"
+              src="image/relative/bg_neon.webp"
+              alt="Imagem de fundo"
+              width={1500}
+              height={900}
+            />
+            <img
+              className="solid light"
+              src="image/relative/bg_solid.webp"
+              alt="Imagem de fundo"
+              width={1500}
+              height={900}
+            />
+          </figure>
+        </div>
         <p className="title gradient-text">
           Resultados mensuráveis em design, desenvolvimento e marketing.
         </p>
@@ -63,6 +81,7 @@ export function HeroHome() {
               width={980}
               height={600}
               className="dark"
+              loading="lazy"
             />
             <img
               src="/image/relative/light.png"
@@ -70,6 +89,7 @@ export function HeroHome() {
               width={980}
               height={600}
               className="light"
+              loading="lazy"
             />
           </figure>
         </div>

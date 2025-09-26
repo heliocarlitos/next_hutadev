@@ -26,6 +26,7 @@ html {
     background-color: var(--real-dark);
   } */
 }
+
 ::selection {
   background-color: var(--lilac-color);
   color: var(--white-color);
@@ -52,6 +53,7 @@ html {
   --text-color: #c6c6c6;
   --text-dark-light: var(--white-color);
   --bg-dark-light: var(--only-bg);
+  --bg-dark-light-transparent:#18181bef;
   --title-color: var(--white-color);
   --bg-color: #09090b;
   --sec-bg-color: #18181b;
@@ -86,10 +88,9 @@ body {
   font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
   transition: background-color 0.2s ease, color 0.2s ease;
   width: 100%;
-  /* border-inline: 1px solid red; */
+  max-width: 1900px;
 }
 
 body::-webkit-scrollbar {
@@ -234,6 +235,7 @@ svg {
     right: -2px;
   }
 }
+
 .dot-bottom {
   &::after {
     bottom: -2px;
