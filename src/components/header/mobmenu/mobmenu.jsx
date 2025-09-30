@@ -35,7 +35,7 @@ export function MobMenu({ open, onClose }) {
   return (
     <>
       <div className="pano" onClick={onClose}></div>
-
+      <div className="white-banner"></div>
       <nav className={`mobmenu slide-in`}>
         <ul>
           <li>
@@ -196,7 +196,11 @@ export function MobMenu({ open, onClose }) {
               </div>
             </Link>
 
-            <div className={`submenu submenu-produto ${produtosAberto ? "show" : ""}`}>
+            <div
+              className={`submenu submenu-produto ${
+                produtosAberto ? "show" : ""
+              }`}
+            >
               <Link
                 href="#"
                 onClick={onClose}
@@ -325,7 +329,6 @@ export function MobMenu({ open, onClose }) {
               Criar conta
             </Link>
           </li>
-
         </ul>
       </nav>
     </>

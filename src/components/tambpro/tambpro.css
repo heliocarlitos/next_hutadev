@@ -73,6 +73,7 @@
   background-color: var(--sec-bg-color);
   border: var(--thin-border);
   padding: 20px 10px;
+  transition: .3s ease;
 }
 .tambpro .box-card .card .content {
   padding: 20px;

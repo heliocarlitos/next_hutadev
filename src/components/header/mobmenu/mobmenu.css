@@ -8,6 +8,16 @@
   background-color: #00000025;
   backdrop-filter: blur(4px);
 }
+
+.white-banner {
+  position: fixed;
+  width: 100%;
+  height: 77px;
+  background-color: var(--sec-bg-color);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 .mobmenu {
   width: 0;
   max-width: 400px !important;
@@ -26,10 +36,12 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateX(100%);
 }
+
 .mobmenu.slide-in {
   transform: translateX(0);
   opacity: 1;
 }
+
 .mobmenu ul {
   display: flex;
   flex-direction: column;
@@ -37,6 +49,7 @@
   gap: 0;
   transform: translateY(90px);
 }
+
 .mobmenu ul li a {
   display: flex;
   align-items: center;
@@ -51,6 +64,7 @@
     border: 1px solid transparent;
   }
 }
+
 .mobmenu ul li a .link-content {
   display: flex;
   align-items: center;
@@ -61,6 +75,7 @@
 .mobmenu ul li .submenu a.active {
   background-color: var(--blue-transparent);
 }
+
 .mobmenu ul li .creat-count {
   justify-content: center;
   position: relative;
@@ -82,6 +97,7 @@
     z-index: -1;
   }
 }
+
 .mobmenu ul li .c-icon svg {
   font-size: 1.1em;
 }
@@ -93,8 +109,6 @@
   transition: max-height 0.3s ease;
   gap: 30px !important;
   overflow: hidden;
-
-
 }
 
 .submenu-produto {
@@ -124,18 +138,22 @@
     color: var(--blue-light-color);
   }
 }
+
 .submenu a .icon {
   background-color: var(--blue-transparent);
   padding: 10px;
   border-radius: 5px;
   color: var(--blue-light-color);
 }
+
 .submenu a .icon svg {
   font-size: 1.1em;
 }
+
 .submenu a .text {
   color: var(--text-color);
 }
+
 .submenu a:hover {
   background-color: var(--blue-transparent);
 }
@@ -146,13 +164,28 @@
     display: none !important;
   }
 }
+
 @media (max-width: 420px) {
   .mobmenu {
     top: -50px;
     height: 110dvh;
     max-width: 100% !important;
   }
+
+  .submenu-produto a:nth-child(2) {
+    margin-top: 0;
+    transform: translateY(-3px);
+  }
+
+  .submenu-produto a:nth-child(3) {
+    margin-top: 5px;
+  }
+
+  .submenu-produto a:nth-child(4) {
+    margin-top: 10px;
+  }
 }
+
 @media (max-height: 915px) {
   .mobmenu {
     overflow-y: auto;
