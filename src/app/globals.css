@@ -5,6 +5,22 @@
   font-size: 1rem;
   margin: 0;
   padding: 0;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid var(--real-dark);
+    background-color: var(--real-gray);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--real-dark);
+    width: 8px;
+  }
 }
 
 html {
@@ -12,19 +28,6 @@ html {
   font-display: swap;
   font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
   scroll-padding-top: 100px;
-  /* &::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--real-gray);
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: var(--real-dark);
-  } */
 }
 
 ::selection {
@@ -256,5 +259,12 @@ svg {
 @media screen and (max-width: 600px) {
   main {
     gap: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  * {
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
   }
 }
