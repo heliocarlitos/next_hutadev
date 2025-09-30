@@ -174,15 +174,18 @@
 
   .submenu-produto a:nth-child(2) {
     margin-top: 0;
-    transform: translateY(-3px);
+    transform: translateY(-15px);
   }
 
   .submenu-produto a:nth-child(3) {
-    margin-top: 5px;
+    margin-top: 0px;
+    transform: translateY(-27px);
+
   }
 
   .submenu-produto a:nth-child(4) {
-    margin-top: 10px;
+    margin-top: 0px;
+    transform: translateY(-39px);
   }
 }
 
