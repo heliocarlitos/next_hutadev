@@ -12,10 +12,11 @@
 .white-banner {
   position: fixed;
   width: 100%;
+  max-width: 400px;
   height: 77px;
   background-color: var(--sec-bg-color);
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 0;
 }
 .mobmenu {
@@ -166,6 +167,10 @@
 }
 
 @media (max-width: 420px) {
+  .white-banner {
+    max-width: 100% !important;
+  }
+
   .mobmenu {
     top: -50px;
     height: 110dvh;
@@ -180,7 +185,6 @@
   .submenu-produto a:nth-child(3) {
     margin-top: 0px;
     transform: translateY(-27px);
-
   }
 
   .submenu-produto a:nth-child(4) {
