@@ -71,7 +71,7 @@ export function TambPro() {
               </p>
             </div>
           </div>
-            <div className="card">
+          {/* <div className="card">
             <figure>
               <img
                 src="image/relative/undraw_gift_box.svg"
@@ -83,10 +83,11 @@ export function TambPro() {
             <div className="content">
               <p className="title">Nossos presentes</p>
               <p className="text">
-                Sistemas operacionais, programas, agentes de inteligência artificial e templates modernos.
+                Sistemas operacionais, programas, agentes de inteligência
+                artificial e templates modernos.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

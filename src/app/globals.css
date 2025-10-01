@@ -99,7 +99,7 @@ body {
   margin-right: auto;
   transition: background-color 0.2s ease, color 0.2s ease;
   width: 100%;
-  max-width: 1900px;
+  max-width: 1400px;
 }
 
 body::-webkit-scrollbar {
@@ -151,6 +151,7 @@ figure {
   align-items: center;
   position: relative;
   user-select: none;
+  transition: 0.3s ease;
 
   &::after {
     position: absolute;
@@ -158,6 +159,10 @@ figure {
     width: 100%;
     height: 100%;
   }
+}
+
+img{
+  transition: .3s ease;
 }
 
 .icon,
@@ -212,6 +217,7 @@ svg {
   font-weight: bold;
   line-height: 1.2;
   font-family: "Chakra Petch", "Outfit", sans-serif;
+  transition: .3s ease;
 }
 
 .gradient-text {

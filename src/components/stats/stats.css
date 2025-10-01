@@ -1,0 +1,96 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.stats .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats .image .logo figure {
+  transform: translateX(20px);
+  z-index: 1;
+  background-color: var(--sec-bg-color);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: var(--normal-shadow);
+}
+
+.stats .image .bg-img {
+  border-radius: 20px;
+  transform: translateX(-40px);
+}
+
+.stats .the-number {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.stats .the-number .box-number {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stats .the-number .box-number .b-number {
+  width: 100%;
+}
+
+.stats .the-number .box-number .title {
+  font-size: 5rem;
+  font-weight: 300;
+  font-family: "Outfit", "Poppins";
+}
+
+.stats .the-number .box-number .text {
+  font-family: "Fira Code", "Chakra Petch";
+}
+
+@media screen and (max-width: 1056px) {
+  .stats .image .bg-img {
+    width: 280px;
+    height: 400px;
+  }
+  .stats .image .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .stats .the-number .box-number .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .stats .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats .the-number {
+    gap: 20px;
+  }
+  .stats .the-number .box-number {
+    text-align: center;
+  }
+  .stats .the-number .box-number .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .stats .the-number .box-number {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}

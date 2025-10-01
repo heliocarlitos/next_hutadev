@@ -43,7 +43,7 @@
 }
 .tambpro .box-card:hover .card:not(:hover) {
   img {
-    filter: saturate(0);
+    /* filter: saturate(0); */
   }
 }
 .tambpro .box-card .card {
