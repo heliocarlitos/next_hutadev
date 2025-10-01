@@ -19,15 +19,15 @@ export function HeroHome() {
               className="neon"
               src="image/relative/bg_neon.webp"
               alt="Imagem de fundo"
-              width={1500}
-              height={900}
+              width={369}
+              height={207}
             />
             <img
               className="solid light"
               src="image/relative/bg_solid.webp"
               alt="Imagem de fundo"
-              width={1500}
-              height={900}
+              width={440}
+              height={247}
             />
           </figure>
         </div>
