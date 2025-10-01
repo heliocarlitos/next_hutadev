@@ -76,7 +76,7 @@ export function HeroHome() {
         <div className="banner">
           <figure>
             <img
-              src="/image/relative/dark.png"
+              src="/image/relative/dark.webp"
               alt="capa dark"
               width={980}
               height={600}
@@ -85,7 +85,7 @@ export function HeroHome() {
               fetchPriority="high"
             />
             <img
-              src="/image/relative/light.png"
+              src="/image/relative/light.webp"
               alt="capa light"
               width={980}
               height={600}
@@ -95,7 +95,7 @@ export function HeroHome() {
             />
           </figure>
         </div>
-
+{/* 
         <div className="cumpany">
           <figure>
             <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
@@ -116,7 +116,7 @@ export function HeroHome() {
             <img src="https://tailwindcss.com/plus-assets/img/logos/laravel-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
     
-        </div>
+        </div> */}
       </div>
     </>
   );
