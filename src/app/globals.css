@@ -137,7 +137,6 @@ body::-webkit-scrollbar-button:single-button:vertical:increment {
 }
 
 main {
-  /* margin-top: 100px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -161,8 +160,8 @@ figure {
   }
 }
 
-img{
-  transition: .3s ease;
+img {
+  transition: 0.3s ease;
 }
 
 .icon,
@@ -217,7 +216,7 @@ svg {
   font-weight: bold;
   line-height: 1.2;
   font-family: "Chakra Petch", "Outfit", sans-serif;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .gradient-text {
@@ -267,6 +266,7 @@ svg {
     gap: 50px;
   }
 }
+
 @media screen and (max-width: 450px) {
   * {
     &::-webkit-scrollbar {

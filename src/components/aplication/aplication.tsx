@@ -29,7 +29,7 @@ export function Aplication() {
         </div>
         <div className="img">
           <figure>
-            <img src="image/relative/bg_dot.png" alt="bot" />
+            <img src="image/relative/bg_dot.png" alt="bot" width={400} height={200} loading="lazy" />
           </figure>
         </div>
         <div className="box-content">

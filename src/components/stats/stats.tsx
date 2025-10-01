@@ -33,10 +33,12 @@ export function Stats() {
               <p className="title">3+</p>
               <p className="text">Anos no mercado</p>
             </div>
+
             <div className="b-number">
               <p className="title">3+</p>
               <p className="text">Membro da equipe</p>
             </div>
+
             <div className="b-number">
               <p className="title">3+</p>
               <p className="text">Usuários activos</p>

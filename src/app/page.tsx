@@ -9,7 +9,7 @@ export default function Home() {
       <HeroHome />
       <TambPro />
       <Aplication />
-      <Stats/>
+      <Stats />
     </>
   );
 }

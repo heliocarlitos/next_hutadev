@@ -11,6 +11,7 @@
   padding-top: 170px;
   transition: all 0.3s ease;
 }
+
 .herohome .bg-img {
   position: absolute;
   top: 0;
@@ -28,6 +29,7 @@
   width: 1920px;
   height: auto;
 }
+
 .herohome .bg-img .solid {
   display: none;
 }
@@ -150,12 +152,14 @@ html.light .herohome .banner img.light {
   gap: 10px;
   display: none;
 }
+
 .herohome .cumpany figure {
   transition: 0.3s ease;
   &:hover {
     transform: scale(110%);
   }
 }
+
 .herohome .cumpany img {
   width: 100%;
   max-width: 150px;

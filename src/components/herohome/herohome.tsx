@@ -82,6 +82,7 @@ export function HeroHome() {
               height={600}
               className="dark"
               loading="lazy"
+              fetchPriority="high"
             />
             <img
               src="/image/relative/light.png"
@@ -90,28 +91,29 @@ export function HeroHome() {
               height={600}
               className="light"
               loading="lazy"
+              fetchPriority="high"
             />
           </figure>
         </div>
 
         <div className="cumpany">
           <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
            <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
            <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
            <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
            <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
            <figure>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/laravel-logo-white.svg" alt="Empresa" width={200} height={60} />
+            <img src="https://tailwindcss.com/plus-assets/img/logos/laravel-logo-white.svg" alt="Empresa" width={200} height={60} loading="lazy"/>
           </figure>
     
         </div>
