@@ -24,9 +24,10 @@ export function TambPro() {
             <figure>
               <img
                 src="image/relative/building_websites.svg"
-                alt="Capa"
+                alt="Capa de Desenvolvimento de web sites"
                 width={300}
                 height={500}
+                loading="lazy"
               />
             </figure>
             <div className="content">
@@ -41,9 +42,10 @@ export function TambPro() {
             <figure>
               <img
                 src="image/relative/undraw.svg"
-                alt="Capa"
+                alt="Capa de Componentes web"
                 width={300}
                 height={500}
+                loading="lazy"
               />
             </figure>
             <div className="content">
@@ -58,9 +60,10 @@ export function TambPro() {
             <figure>
               <img
                 src="image/relative/undraw_online_cv.svg"
-                alt="Capa"
+                alt="Capa de Criação de currículo vitae"
                 width={300}
                 height={500}
+                loading="lazy"
               />
             </figure>
             <div className="content">
@@ -71,13 +74,15 @@ export function TambPro() {
               </p>
             </div>
           </div>
+          
           {/* <div className="card">
             <figure>
               <img
                 src="image/relative/undraw_gift_box.svg"
-                alt="Capa"
+                alt="Capa de Nossos presentes"
                 width={300}
                 height={500}
+                loading="lazy"
               />
             </figure>
             <div className="content">
