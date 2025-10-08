@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
   margin: auto;
   padding: 0 20px;
   padding-top: 170px;
@@ -47,34 +47,51 @@
   max-width: 700px;
   line-height: 1.6;
 }
-
-.herohome button {
+.herohome .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  gap: 10px;
+}
+.herohome .btn .start,
+.herohome .btn .who-are {
   background-color: var(--blue-color);
   color: var(--white-color);
   padding: 15px 30px;
   border-radius: 100px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   gap: 10px;
-  font-size: 1.1rem;
 
   &:focus {
-    border: 2px solid var(--text-dark-light);
+    border: 1px solid var(--text-dark-light);
   }
 
   &:hover .text-area .text {
-    transform: translateY(-35px);
+    transform: translateY(-25px);
   }
 }
 
-.herohome button .text-area {
+.herohome .btn .text-area {
   overflow: hidden;
   height: 25px;
 }
 
-.herohome button .text-area .text {
+.herohome .btn .text-area .text {
   transition: 0.3s ease;
-  transform: translateY(-4px);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Fira Code";
 }
+
+.herohome .btn .who-are {
+  border: var(--border);
+  background-color: transparent;
+  color: var(--text-dark-light);
+}
+
 .herohome .tecnology {
   width: 100%;
   max-width: 600px;
@@ -143,7 +160,6 @@
 
 .herohome .banner img {
   width: 100%;
-  max-width: 1200px;
   height: auto;
   display: none;
 }
@@ -187,18 +203,22 @@ html.light .herohome .banner img.light {
     gap: 30px;
     padding-top: 120px;
   }
+
   .herohome .bg-img .neon {
     display: none;
   }
+
   .herohome .bg-img .solid {
     display: flex;
     opacity: 0.5;
   }
+
   html.light .herohome .bg-img img.light {
     display: none;
   }
+
   .herohome .title {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .herohome .text {
@@ -219,6 +239,9 @@ html.light .herohome .banner img.light {
 }
 
 @media (max-width: 400px) {
+  .herohome .title {
+    font-size: 1.7rem;
+  }
   .herohome .banner {
     border-radius: 10px;
   }
@@ -229,5 +252,18 @@ html.light .herohome .banner img.light {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+}
+@media (max-width: 352px) {
+  .herohome .title {
+    font-size: 1.5rem;
+  }
+  .herohome .btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .herohome .btn button,
+  .herohome .btn a {
+    width: 100%;
   }
 }
