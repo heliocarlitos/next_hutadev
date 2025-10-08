@@ -35,8 +35,11 @@
 }
 
 .herohome .title {
-  font-size: 2.5rem;
-  max-width: 660px;
+  font-size: 3rem;
+  max-width: 900px;
+  font-weight: 500;
+  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  color: var(--text-dark-light);
 }
 
 .herohome .text {
@@ -48,16 +51,30 @@
 .herohome button {
   background-color: var(--blue-color);
   color: var(--white-color);
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 100px;
   border: 2px solid transparent;
   gap: 10px;
+  font-size: 1.1rem;
 
   &:focus {
     border: 2px solid var(--text-dark-light);
   }
+
+  &:hover .text-area .text {
+    transform: translateY(-35px);
+  }
 }
 
+.herohome button .text-area {
+  overflow: hidden;
+  height: 25px;
+}
+
+.herohome button .text-area .text {
+  transition: 0.3s ease;
+  transform: translateY(-4px);
+}
 .herohome .tecnology {
   width: 100%;
   max-width: 600px;

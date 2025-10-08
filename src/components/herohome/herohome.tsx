@@ -31,7 +31,7 @@ export function HeroHome() {
             />
           </figure>
         </div>
-        <p className="title gradient-text">
+        <p className="title">
           Resultados mensuráveis em design, desenvolvimento e marketing.
         </p>
 
@@ -42,7 +42,10 @@ export function HeroHome() {
         </p>
 
         <button>
-          Começar agora
+          <div className="text-area">
+            <div className="text">Começar agora</div>
+            <div className="text">Começar agora</div>
+          </div>
           <div className="icon">
             <BsStars />
           </div>
