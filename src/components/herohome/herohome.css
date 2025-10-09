@@ -48,7 +48,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 450px;
+  max-width: 570px;
   gap: 10px;
   padding: 0 20px;
 }
@@ -74,6 +74,7 @@
 .herohome .btn .text-area {
   overflow: hidden;
   height: 25px;
+  text-wrap: nowrap;
 }
 
 .herohome .btn .text-area .text {
