@@ -15,25 +15,6 @@ export function HeroHome() {
     <>
       <div className="herohome">
 
-        <div className="bg-img">
-          <figure>
-            <img
-              className="neon"
-              src="image/relative/bg_neon.webp"
-              alt="Imagem de fundo"
-              width={369}
-              height={207}
-            />
-            <img
-              className="solid light"
-              src="image/relative/bg_solid.webp"
-              alt="Imagem de fundo"
-              width={440}
-              height={247}
-            />
-          </figure>
-        </div>
-
         <p className="title">
           Resultados mensuráveis em design, desenvolvimento e marketing.
         </p>

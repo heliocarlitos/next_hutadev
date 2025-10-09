@@ -66,6 +66,7 @@ html {
   --bg-dark-light-transparent: #18181bef;
   --title-color: var(--white-color);
   --bg-color: #09090b;
+  --bg-earth: #2600ff59;
   --sec-bg-color: #18181b;
   --sec-bg-transparent: var(--scroll-nav);
   --only-sec-bg-color: #18181b;
@@ -204,6 +205,10 @@ button {
 
 svg {
   font-size: 1.4rem;
+}
+
+p{
+  line-height: 1.6em;
 }
 
 .btn {

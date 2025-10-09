@@ -7,31 +7,24 @@
   flex-direction: column;
   gap: 60px;
   margin: auto;
-  padding: 0 20px;
   padding-top: 170px;
   transition: all 0.3s ease;
-}
-
-.herohome .bg-img {
-  position: absolute;
-  top: 0;
-  z-index: -9999;
+  position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  display: none;
-}
 
-.herohome .bg-img img {
-  position: absolute;
-  top: 0;
-  width: 1920px;
-  height: auto;
-}
-
-.herohome .bg-img .solid {
-  display: none;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%) scale(1);
+    width: 120vw;
+    aspect-ratio: 1 / 1;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0 0 40px var(--bg-earth);
+    transition: all 0.3s ease;
+  }
 }
 
 .herohome .title {
@@ -40,12 +33,14 @@
   font-weight: 500;
   font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
   color: var(--text-dark-light);
+  padding: 0 10px;
 }
 
 .herohome .text {
   font-size: 1.2rem;
   max-width: 700px;
   line-height: 1.6;
+  padding: 0 20px;
 }
 
 .herohome .btn {
@@ -55,6 +50,7 @@
   width: 100%;
   max-width: 450px;
   gap: 10px;
+  padding: 0 20px;
 }
 
 .herohome .btn .start,
@@ -101,6 +97,8 @@
   align-items: center;
   gap: 5px;
   justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--bg-color);
 }
 
 .herohome .tecnology .icon {
@@ -154,14 +152,14 @@
 
 .herohome .banner {
   background-color: var(--black-soft);
-  border-radius: 30px;
   overflow: hidden;
-  border: var(--thin-border);
   max-width: 100%;
+  background-color: var(--bg-color);
 }
 
 .herohome .banner img {
-  width: 100%;
+  border-radius: 30px;
+  width: 95%;
   height: auto;
   display: none;
 }
@@ -205,6 +203,11 @@ html.light .herohome .banner img.light {
   .herohome {
     gap: 30px;
     padding-top: 120px;
+
+    &::after {
+      width: 130vw;
+      transform: translate(-50%, -27%) scale(1);
+    }
   }
 
   .herohome .bg-img .neon {
