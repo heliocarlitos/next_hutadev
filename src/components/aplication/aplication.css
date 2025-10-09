@@ -2,16 +2,18 @@
   padding: 0 20px;
   position: relative;
 }
+
 .aplication .intro {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  gap: 10px;
+  gap: 20px;
   max-width: 700px;
   margin: auto;
 }
+
 .aplication .intro .app-title {
   margin: auto;
   border: var(--thin-border);
@@ -24,10 +26,12 @@
   font-family: "Chakra Petch", "Outfit", sans-serif;
   font-weight: bold;
 }
+
 .aplication .intro .title {
   font-size: 2rem;
   max-width: 700px;
 }
+
 .aplication .img {
   z-index: -9999;
   position: absolute;
@@ -39,10 +43,12 @@
   overflow: hidden;
   opacity: 0.4;
 }
+
 .aplication .img img {
   width: 1300px;
   height: auto;
 }
+
 .aplication .box-content {
   display: flex;
   flex-direction: column;
@@ -50,6 +56,7 @@
   gap: 30px;
   margin-top: 60px;
 }
+
 .aplication .box-content .box {
   display: flex;
   justify-content: space-between;
@@ -59,12 +66,14 @@
   align-items: center;
   gap: 3px;
 }
+
 .aplication .box-content .box .box-item {
   display: flex;
   align-items: self-start;
   width: 100%;
   height: 100px;
 }
+
 .aplication .box-content .box .box-item .icon {
   background-color: var(--lilac-color);
   width: 70px;
@@ -76,30 +85,37 @@
     font-size: 2.5em;
   }
 }
+
 .aplication .box-content .box .box-item .circle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
+
 .aplication .box-content .box .box-item .blue {
   background-color: var(--blue-color);
 }
+
 .aplication .box-content .box .box-item .yellow {
   background-color: var(--yellow-color);
   width: 15px;
   height: 15px;
 }
+
 .aplication .box-content .box .box-item .green {
   background-color: var(--green-light);
 }
+
 .aplication .box-content .box .box-item .orange {
   background-color: var(--orange-color);
   width: 30px;
   height: 30px;
 }
+
 .aplication .box-content .box .box-item .blue {
   background-color: var(--blue-color);
 }
+
 @media screen and (max-width: 600px) {
   .aplication .intro .title {
     font-size: 1.5rem;
@@ -109,6 +125,13 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 400px){
+  .aplication .intro {
+    gap: 10px;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .aplication .img {
     transform: translateY(-140px);
@@ -121,6 +144,7 @@
     }
   }
 }
+
 @media screen and (max-width: 300px) {
   .aplication .box-content .box {
     justify-content: s;

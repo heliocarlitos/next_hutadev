@@ -47,6 +47,7 @@
   max-width: 700px;
   line-height: 1.6;
 }
+
 .herohome .btn {
   display: flex;
   justify-content: space-between;
@@ -55,6 +56,7 @@
   max-width: 450px;
   gap: 10px;
 }
+
 .herohome .btn .start,
 .herohome .btn .who-are {
   background-color: var(--blue-color);
@@ -198,6 +200,7 @@ html.light .herohome .banner img.light {
   max-width: 150px;
   height: auto;
 }
+
 @media (max-width: 550px) {
   .herohome {
     gap: 30px;
@@ -242,6 +245,7 @@ html.light .herohome .banner img.light {
   .herohome .title {
     font-size: 1.7rem;
   }
+
   .herohome .banner {
     border-radius: 10px;
   }
@@ -254,6 +258,7 @@ html.light .herohome .banner img.light {
     gap: 10px;
   }
 }
+
 @media (max-width: 352px) {
   .herohome .title {
     font-size: 1.5rem;
@@ -262,6 +267,7 @@ html.light .herohome .banner img.light {
     flex-direction: column;
     gap: 20px;
   }
+
   .herohome .btn button,
   .herohome .btn a {
     width: 100%;

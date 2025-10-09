@@ -54,6 +54,7 @@ export function HeroHome() {
               <BsStars />
             </div>
           </button>
+          
           <Link href="#" className="who-are">
            <div className="text-area">
               <div className="text">Sobre nós</div>
