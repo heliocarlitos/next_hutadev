@@ -262,16 +262,16 @@ svg {
   }
 }
 
-@media screen and (max-width: 600px) {
-  main {
-    gap: 50px;
-  }
-}
-
 @media screen and (max-width: 450px) {
   * {
     &::-webkit-scrollbar {
       width: 0px;
     }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    gap: 50px;
   }
 }
