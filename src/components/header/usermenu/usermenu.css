@@ -90,7 +90,10 @@
     .user-menu .user-submenu {
     width: 87vw !important;
     padding: 20px;
+  }
+  .header.scrolled .user-menu .user-submenu.open{
     right: -20px;
+
   }
   .user-menu .user-submenu.open {
     opacity: 1;
