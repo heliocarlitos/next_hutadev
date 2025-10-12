@@ -93,8 +93,8 @@
   }
   .header.scrolled .user-menu .user-submenu.open{
     right: -20px;
-
   }
+  
   .user-menu .user-submenu.open {
     opacity: 1;
     transform: translateY(0);
