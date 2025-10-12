@@ -12,6 +12,7 @@ import { Servicos } from "./(megamenu)/servicos";
 import { Produtos } from "./(megamenu)/produtos";
 
 import "./header.css";
+import { UserMenu } from "./usermenu/usermenu";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -169,6 +170,7 @@ export function Header() {
             menuAberto={menuMobAberto}
             toggleMenu={toggleMenuMob}
           />
+          <UserMenu/>
         </div>
       </nav>
       <MobMenu open={menuMobAberto} onClose={() => setMenuMobAberto(false)} />

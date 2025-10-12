@@ -1,0 +1,103 @@
+.user-menu {
+  position: relative;
+}
+
+.user-menu .btn-photo img {
+  border-radius: 50%;
+}
+
+.user-menu .user-submenu {
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  position: absolute;
+  right: 0;
+  transform: translateY(-10px);
+  background-color: var(--sec-bg-color);
+  border-radius: 20px;
+  width: 350px;
+  opacity: 0;
+  padding: 30px;
+  gap: 10px;
+}
+
+.user-menu .user-submenu.open {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.user-menu .user-submenu .user-detal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: var(--border);
+  padding-bottom: 13px;
+}
+
+.user-menu .user-submenu .user-detal img {
+  border-radius: 50%;
+}
+
+.user-menu .user-submenu .user-detal .full-name {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--lilac-color);
+  line-height: 1;
+}
+.user-menu .user-submenu .user-detal .username {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-style: italic;
+}
+.user-menu .user-submenu .user-detal .username .icon svg {
+  font-size: 1rem;
+}
+.user-menu .user-submenu .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+}
+.user-menu .user-submenu .list a,
+.user-menu .user-submenu .list button {
+  width: 100%;
+  justify-content: left;
+  padding: 10px 20px;
+  border-radius: 5px;
+  gap: 10px;
+  &:hover {
+    background-color: var(--lilac-color);
+    color: var(--white-color);
+  }
+}
+.user-menu .user-submenu .list button {
+  justify-content: center;
+  border: var(--border);
+  margin-top: 10px;
+  &:hover {
+    background-color: var(--red-color);
+    border: 1px solid transparent;
+  }
+}
+@media screen and (max-width: 380px) {
+  .user-menu .user-submenu {
+    width: 300px;
+    padding: 20px;
+    right: -10px;
+  }
+}
+@media screen and (max-width: 324px) {
+  .user-menu .user-submenu {
+    width: 250px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 276px) {
+  .user-menu .user-submenu .user-detal {
+    display: none;
+  }
+  .user-menu .user-submenu {
+    width: 230px;
+  }
+}
