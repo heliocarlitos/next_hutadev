@@ -32,6 +32,7 @@
   align-items: center;
   border-bottom: var(--border);
   padding-bottom: 13px;
+  width: 100%;
 }
 
 .user-menu .user-submenu .user-detal img {
@@ -44,21 +45,25 @@
   color: var(--lilac-color);
   line-height: 1;
 }
+
 .user-menu .user-submenu .user-detal .username {
   display: flex;
   align-items: center;
   margin-top: 5px;
   font-style: italic;
 }
+
 .user-menu .user-submenu .user-detal .username .icon svg {
   font-size: 1rem;
 }
+
 .user-menu .user-submenu .list {
   display: flex;
   flex-direction: column;
   gap: 1px;
   width: 100%;
 }
+
 .user-menu .user-submenu .list a,
 .user-menu .user-submenu .list button {
   width: 100%;
@@ -71,6 +76,7 @@
     color: var(--white-color);
   }
 }
+
 .user-menu .user-submenu .list button {
   justify-content: center;
   border: var(--border);
