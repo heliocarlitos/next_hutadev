@@ -80,6 +80,7 @@
     border: 1px solid transparent;
   }
 }
+
 @media screen and (max-width: 380px) {
   .user-menu .user-submenu {
     width: 300px;

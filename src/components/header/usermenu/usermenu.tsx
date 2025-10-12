@@ -44,12 +44,12 @@ export function UserMenu() {
             />
           </figure>
           <div className="name-username">
-            <p className="full-name">Pedro José Tobias Ismael</p>
+            <p className="full-name">Full Name</p>
             <div className="username">
               <div className="icon">
                 <FiAtSign />
               </div>
-              Simples usuário
+              username
             </div>
           </div>
         </div>
