@@ -6,8 +6,8 @@ import { Stats } from "@/components/stats/stats";
 export default function Home() {
   return (
     <>
-      {/* <HeroHome /> */}
-      <br/>
+      <HeroHome />
+      {/* <br/> */}
       <Desenvolvemos />
       <Aplication />
       <Stats />
