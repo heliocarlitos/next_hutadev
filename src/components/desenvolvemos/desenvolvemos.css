@@ -69,6 +69,7 @@
     border-radius: 25px;
     border: var(--thin-border);
     transform: translate(-1px, -1px);
+    z-index: -1;
   }
 
   &:hover .box-icon .icon {
