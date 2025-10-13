@@ -63,6 +63,10 @@
   padding: 30px;
   gap: 20px;
   width: 100%;
+
+  &:hover .box-icon .icon {
+    transform: translate(20px, -20px);
+  }
 }
 
 .desenvolvemos .box-card .card svg {
@@ -85,9 +89,6 @@
   padding: 10px 20px;
   border-radius: 100px;
 
-  &:hover .box-icon .icon {
-    transform: translate(20px, -20px);
-  }
   &:hover .text-area .text {
     transform: translateY(-22px);
   }
