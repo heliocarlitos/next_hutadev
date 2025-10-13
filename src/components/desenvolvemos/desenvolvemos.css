@@ -1,14 +1,14 @@
-.tambpro {
+.desenvolvemos {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
 }
 
-.tambpro .intro {
+.desenvolvemos .intro {
   max-width: 600px;
 }
 
-.tambpro .intro .pre-text {
+.desenvolvemos .intro .pre-text {
   position: relative;
   display: inline-flex;
   padding: 5px 10px;
@@ -23,37 +23,37 @@
   }
 }
 
-.tambpro .intro .title,
-.tambpro .intro .title span {
+.desenvolvemos .intro .title,
+.desenvolvemos .intro .title span {
   font-size: 2.5rem;
   font-weight: 500;
   font-family: "Chakra Petch";
 }
 
-.tambpro .intro .title span {
+.desenvolvemos .intro .title span {
   color: var(--lilac-color);
 }
 
-.tambpro .intro .text {
+.desenvolvemos .intro .text {
   margin: 20px 0;
   & span {
     color: var(--text-dark-light);
   }
 }
 
-.tambpro .box-card .box-c {
+.desenvolvemos .box-card .box-c {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   justify-content: center;
 }
 
-.tambpro .box-card:hover .card:not(:hover) {
+.desenvolvemos .box-card:hover .card:not(:hover) {
   img {
     /* filter: saturate(0); */
   }
 }
 
-.tambpro .box-card .card {
+.desenvolvemos .box-card .card {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
@@ -65,22 +65,22 @@
   width: 100%;
 }
 
-.tambpro .box-card .card svg {
+.desenvolvemos .box-card .card svg {
   font-size: 2rem;
   color: var(--text-dark-light);
 }
 
-.tambpro .box-card .card .title {
+.desenvolvemos .box-card .card .title {
   font-size: 1.2em;
   font-weight: 500;
   font-family: "Fira Code", "Chakra Petch", "Outfit", sans-serif;
 }
 
-.tambpro .box-card .card .text {
+.desenvolvemos .box-card .card .text {
   color: var(--text);
 }
 
-.tambpro .box-card .card a {
+.desenvolvemos .box-card .card a {
   border: var(--border);
   padding: 10px 20px;
   border-radius: 100px;
@@ -93,13 +93,13 @@
   }
 }
 
-.tambpro .box-card .card a .text-area {
+.desenvolvemos .box-card .card a .text-area {
   overflow: hidden;
   height: 22px;
   text-wrap: nowrap;
 }
 
-.tambpro .box-card .card a .text-area .text {
+.desenvolvemos .box-card .card a .text-area .text {
   transition: 0.3s ease;
   font-size: 1rem;
   font-weight: 800;
@@ -109,24 +109,24 @@
   color: var(--text-dark-light);
 }
 
-.tambpro .box-card .card a .box-icon {
+.desenvolvemos .box-card .card a .box-icon {
   width: 30px;
   height: 20px;
   overflow: hidden;
 }
 
-.tambpro .box-card .card a .icon:nth-child(2) {
+.desenvolvemos .box-card .card a .icon:nth-child(2) {
   margin-left: -35px;
 }
 
-.tambpro .box-card .card a .icon svg {
+.desenvolvemos .box-card .card a .icon svg {
   transform: rotate(-45deg);
   font-size: 1.2rem;
   color: var(--lilac-color);
 }
 
 @media screen and (max-width: 305px) {
-  .tambpro .box-card .box-c {
+  .desenvolvemos .box-card .box-c {
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
 }

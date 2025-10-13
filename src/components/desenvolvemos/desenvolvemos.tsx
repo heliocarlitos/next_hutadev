@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./tambpro.css";
+import "./desenvolvemos.css";
 import {
   FaGlobe,
   FaArrowRightLong,
@@ -7,10 +7,10 @@ import {
   FaFile,
 } from "react-icons/fa6";
 
-export function TambPro() {
+export function Desenvolvemos() {
   return (
     <>
-      <div className="tambpro">
+      <div className="desenvolvemos">
         <div className="intro">
           <div className="pre-text">
             <div className="dot-top"></div>
