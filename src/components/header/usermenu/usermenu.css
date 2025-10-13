@@ -15,7 +15,7 @@
   transform: translateY(-10px);
   background-color: var(--sec-bg-color);
   border-radius: 20px;
-  width: 350px;
+  width: 300px;
   opacity: 0;
   visibility: hidden;
   padding: 20px;
