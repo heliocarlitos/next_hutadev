@@ -18,7 +18,9 @@ export function UserMenu() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
+  function closeusermenu() {
+    setOpen(false);
+  }
   return (
     <div className="user-menu" ref={menuRef}>
       <button className="btn-photo" onClick={() => setOpen(!open)}>
@@ -56,7 +58,7 @@ export function UserMenu() {
 
         <ul className="list">
           <li>
-            <Link href="#">
+            <Link href="#" onClick={closeusermenu}>
               <div className="icon">
                 <FiUser />
               </div>
@@ -65,7 +67,7 @@ export function UserMenu() {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="#" onClick={closeusermenu}>
               <div className="icon">
                 <FiSettings />
               </div>
@@ -73,7 +75,7 @@ export function UserMenu() {
             </Link>
           </li>
 
-          <button>
+          <button onClick={closeusermenu}>
             <div className="icon">
               <FiLogOut />
             </div>

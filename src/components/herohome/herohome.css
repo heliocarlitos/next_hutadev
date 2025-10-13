@@ -245,6 +245,26 @@ html.light .herohome .banner img.light {
   }
 }
 
+@media (max-width: 526px) {
+  .herohome .btn {
+    justify-content: center;
+  }
+
+  .herohome .btn .start {
+    padding: 15px 20px 15px 0;
+  }
+
+  .herohome .btn .who-are {
+    padding: 15px 0;
+    width: 140px;
+  }
+
+  .herohome .btn .start,
+  .herohome .btn .who-are {
+    gap: 0;
+  }
+}
+
 @media (max-width: 400px) {
   .herohome .title {
     font-size: 1.7rem;
@@ -252,6 +272,18 @@ html.light .herohome .banner img.light {
 
   .herohome .banner {
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .herohome .btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .herohome .btn .start,
+  .herohome .btn .who-are {
+    width: 100%;
   }
 }
 
@@ -266,14 +298,5 @@ html.light .herohome .banner img.light {
 @media (max-width: 352px) {
   .herohome .title {
     font-size: 1.5rem;
-  }
-  .herohome .btn {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .herohome .btn button,
-  .herohome .btn a {
-    width: 100%;
   }
 }

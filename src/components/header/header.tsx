@@ -162,15 +162,19 @@ export function Header() {
         </ul>
 
         <div className="btn-local">
+          
           {/* <BtnChangeTheme /> */}
+
           <div className="btn">
             <button className="border-gradient creat-count">Criar conta</button>
           </div>
+
+          <UserMenu/>
+
           <BtnShowMenuMob
             menuAberto={menuMobAberto}
             toggleMenu={toggleMenuMob}
           />
-          <UserMenu/>
         </div>
       </nav>
       <MobMenu open={menuMobAberto} onClose={() => setMenuMobAberto(false)} />

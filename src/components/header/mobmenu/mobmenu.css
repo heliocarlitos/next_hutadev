@@ -19,6 +19,7 @@
   right: 0;
   z-index: 0;
 }
+ 
 .mobmenu {
   width: 0;
   max-width: 400px !important;
@@ -80,7 +81,7 @@
 .mobmenu ul li .creat-count {
   justify-content: center;
   position: relative;
-  display: flex;
+  display: none;
   height: 50px;
   width: 330px;
   margin: auto;
@@ -88,6 +89,7 @@
   background-color: var(--black-color);
   border-radius: 100px;
   color: var(--white-color);
+
   &::after {
     background-image: var(--bg-gradient);
     border-radius: 100px;
@@ -190,6 +192,10 @@
   .submenu-produto a:nth-child(4) {
     margin-top: 0px;
     transform: translateY(-39px);
+  }
+
+  .mobmenu ul li .creat-count {
+    display: flex;
   }
 }
 
