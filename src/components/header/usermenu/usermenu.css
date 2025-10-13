@@ -11,7 +11,7 @@
   justify-content: left;
   align-items: start;
   position: absolute;
-  right: 0px;
+  right: 0;
   transform: translateY(-10px);
   background-color: var(--sec-bg-color);
   border-radius: 20px;
@@ -22,8 +22,8 @@
   gap: 10px;
 }
 
-.header.scrolled .user-menu .user-submenu.open {
-  right: -20px;
+.header.scrolled .user-menu .user-submenu {
+  right: -60px;
 }
 
 .user-menu .user-submenu.open {
