@@ -11,6 +11,7 @@ export function Desenvolvemos() {
   return (
     <>
       <div className="desenvolvemos">
+        
         <div className="intro">
           <div className="pre-text">
             <div className="dot-top"></div>
