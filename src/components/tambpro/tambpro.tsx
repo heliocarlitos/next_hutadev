@@ -1,4 +1,12 @@
+import Link from "next/link";
 import "./tambpro.css";
+import {
+  FaGlobe,
+  FaArrowRightLong,
+  FaBagShopping,
+  FaFile,
+} from "react-icons/fa6";
+
 export function TambPro() {
   return (
     <>
@@ -20,79 +28,88 @@ export function TambPro() {
         </div>
 
         <div className="box-card">
-          <div className="card">
-            <figure>
-              <img
-                src="image/relative/building_websites.svg"
-                alt="Capa de Desenvolvimento de web sites"
-                width={300}
-                height={500}
-                loading="lazy"
-              />
-            </figure>
-            <div className="content">
-              <p className="title">Desenvolvimento de web sites</p>
+          <div className="box-c">
+            <div className="card">
+              <div className="icon">
+                <FaBagShopping />
+              </div>
+              <p className="title">Produtos</p>
               <p className="text">
-                Sites responsivos, seguros e otimizados, que oferecem excelente
-                experiência em todos os dispositivos.
+                Plataformas web intuitivas e protegidas que permitem às empresas
+                vender e expandir digitalmente, sem conhecimentos técnicos
+                avançados.
               </p>
+
+              <Link href="#">
+                <div className="text-area">
+                  <div className="text">Saber mais</div>
+                  <div className="text">Saber mais</div>
+                </div>
+                <div className="box-icon">
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="card">
+              <div className="icon">
+                <FaGlobe />
+              </div>
+              <p className="title">Componentes Web</p>
+              <p className="text">
+                Biblioteca de componentes reutilizáveis, acessíveis e
+                responsivos, desenvolvidos para acelerar projectos e melhorar a
+                experiência do utilizador.
+              </p>
+
+              <Link href="#">
+                <div className="text-area">
+                  <div className="text">Saber mais</div>
+                  <div className="text">Saber mais</div>
+                </div>
+                <div className="box-icon">
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="card">
+              <div className="icon">
+                <FaFile />
+              </div>
+              <p className="title">Currículo Vitae</p>
+              <p className="text">
+                Cria connosco ou descarrega gratuitamente o teu currículo
+                moderno, com modelos adaptados às exigências actuais das
+                empresas.
+              </p>
+
+              <Link href="#">
+                <div className="text-area">
+                  <div className="text">Saber mais</div>
+                  <div className="text">Saber mais</div>
+                </div>
+                <div className="box-icon">
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                  <div className="icon">
+                    <FaArrowRightLong />
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
-          <div className="card">
-            <figure>
-              <img
-                src="image/relative/undraw.svg"
-                alt="Capa de Componentes web"
-                width={300}
-                height={500}
-                loading="lazy"
-              />
-            </figure>
-            <div className="content">
-              <p className="title">Componentes web</p>
-              <p className="text">
-                Componentes modulares e reutilizáveis, garantindo consistência,
-                eficiência e facilidade de manutenção.
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <figure>
-              <img
-                src="image/relative/undraw_online_cv.svg"
-                alt="Capa de Criação de currículo vitae"
-                width={300}
-                height={500}
-                loading="lazy"
-              />
-            </figure>
-            <div className="content">
-              <p className="title">Criação de currículo vitae</p>
-              <p className="text">
-                Currículos claros e estruturados, que destacam competências e
-                experiências de forma profissional.
-              </p>
-            </div>
-          </div>
-          
-          {/* <div className="card">
-            <figure>
-              <img
-                src="image/relative/undraw_gift_box.svg"
-                alt="Capa de Nossos presentes"
-                width={300}
-                height={500}
-                loading="lazy"
-              />
-            </figure>
-            <div className="content">
-              <p className="title">Nossos presentes</p>
-              <p className="text">
-                Sistemas operacionais, programas, agentes de inteligência
-                artificial e templates modernos.
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </>

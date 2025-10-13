@@ -163,7 +163,7 @@ export function Header() {
 
         <div className="btn-local">
           
-          {/* <BtnChangeTheme /> */}
+          <BtnChangeTheme />
 
           <div className="btn">
             <button className="border-gradient creat-count">Criar conta</button>

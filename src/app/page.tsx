@@ -6,7 +6,7 @@ import { TambPro } from "@/components/tambpro/tambpro";
 export default function Home() {
   return (
     <>
-      <HeroHome />
+      {/* <HeroHome /> */}
       <TambPro />
       <Aplication />
       <Stats />
