@@ -20,6 +20,7 @@
   visibility: hidden;
   padding: 20px;
   gap: 10px;
+  border: var(--thin-border);
 }
 
 .header.scrolled .user-menu .user-submenu {
