@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   transition: all 0.3s ease;
-  
+  -webkit-tap-highlight-color: transparent;
+
   &::-webkit-scrollbar {
     width: 8px;
     border-radius: 10px;
@@ -78,7 +79,7 @@ html {
   --border: 1px solid #747474;
   --normal-shadow: -8px 8px 20px #00000014;
   --scroll-nav: #18181bef;
-  --text:#a7a7a7;
+  --text: #a7a7a7;
 }
 
 .light {
@@ -93,7 +94,7 @@ html {
   --sec-bg-color: var(--white-color);
   --sec-bg-transparent: #ffffffcb;
   --thin-border: 1px solid #525f7428;
-  --text:#535353;
+  --text: #535353;
 }
 
 body {
@@ -169,7 +170,7 @@ img {
   transition: 0.3s ease;
 }
 
-.icon{
+.icon {
   flex-direction: column;
 }
 .icon,
@@ -209,7 +210,7 @@ svg {
   font-size: 1.4rem;
 }
 
-p{
+p {
   line-height: 1.6em;
 }
 
