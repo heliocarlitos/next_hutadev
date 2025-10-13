@@ -164,16 +164,16 @@ export function Header() {
         <div className="btn-local">
           <BtnChangeTheme />
 
-          {/* <div className="btn">
+          <div className="btn">
             <button className="border-gradient creat-count">
               <div className="text-area">
                 <div className="text">Criar conta</div>
                 <div className="text">Criar conta</div>
               </div>
             </button>
-          </div> */}
+          </div>
 
-          <UserMenu />
+          {/* <UserMenu /> */}
 
           <BtnShowMenuMob
             menuAberto={menuMobAberto}
