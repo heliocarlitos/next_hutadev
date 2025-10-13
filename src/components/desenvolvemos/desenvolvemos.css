@@ -1,44 +1,8 @@
 .desenvolvemos {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   padding: 0 20px;
-}
-
-.desenvolvemos .intro {
-  max-width: 600px;
-}
-
-.desenvolvemos .intro .pre-text {
-  position: relative;
-  display: inline-flex;
-  padding: 5px 10px;
-  border: var(--border);
-  & p {
-    font-family: "Fira Code";
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    max-width: 500px;
-    text-transform: uppercase;
-    color: var(--lilac-color);
-  }
-}
-
-.desenvolvemos .intro .title,
-.desenvolvemos .intro .title span {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "Chakra Petch";
-}
-
-.desenvolvemos .intro .title span {
-  color: var(--lilac-color);
-}
-
-.desenvolvemos .intro .text {
-  margin: 20px 0;
-  & span {
-    color: var(--text-dark-light);
-  }
 }
 
 .desenvolvemos .box-card .box-c {

@@ -1,0 +1,58 @@
+.intro {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro .pre-text {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: var(--border);
+  border-radius: 10px;
+  font-family: "Fira Code";
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-dark-light);
+  cursor: default;
+  user-select: none;
+}
+
+.intro .pre-text svg {
+  font-size: 0.9rem;
+  color: var(--lilac-color);
+}
+
+.intro .pre-text .linha {
+  width: 15px;
+  height: 1px;
+  background-color: var(--text-dark-light);
+}
+
+.intro .title,
+.intro .title span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Chakra Petch";
+}
+
+.intro .title span {
+  color: var(--lilac-color);
+  margin-left: 10px;
+}
+
+.intro .text {
+  & span {
+    color: var(--text-dark-light);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro .title,
+  .intro .title span {
+    font-size: 2rem;
+  }
+}

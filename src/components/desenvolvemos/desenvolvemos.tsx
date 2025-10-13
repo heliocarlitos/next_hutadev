@@ -5,28 +5,25 @@ import {
   FaArrowRightLong,
   FaBagShopping,
   FaFile,
+  FaBolt,
 } from "react-icons/fa6";
+import { Intro } from "../intro/intro";
 
 export function Desenvolvemos() {
   return (
     <>
       <div className="desenvolvemos">
-        
-        <div className="intro">
-          <div className="pre-text">
-            <div className="dot-top"></div>
-            <div className="dot-bottom"></div>
-            <p>Sempre actualizados</p>
-          </div>
-          <p className="title">
-            Desenvolvemos seus produtos pensando no <span>seu crescimento</span>
-          </p>
-          <p className="text">
-            Trabalhamos consigo para materializar suas ideias em soluções úteis,
-            criando <span>produtos que acompanham</span> o ritmo do seu negócio
-            e ajudam a conquistar espaço e reconhecimento no mercado.
-          </p>
-        </div>
+        <Intro
+          icon={<FaBolt />}
+          tag="Características"
+          title={
+            <>
+              Desenvolvemos seus produtos pensando no
+              <span>seu crescimento</span>
+            </>
+          }
+          text="Trabalhamos consigo para materializar suas ideias em soluções úteis, criando produtos que acompanham o ritmo do seu negócio e ajudam a conquistar espaço e reconhecimento no mercado."
+        />
 
         <div className="box-card">
           <div className="box-c">
@@ -112,7 +109,6 @@ export function Desenvolvemos() {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );
