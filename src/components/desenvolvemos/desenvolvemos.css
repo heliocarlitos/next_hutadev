@@ -47,12 +47,6 @@
   justify-content: center;
 }
 
-.desenvolvemos .box-card:hover .card:not(:hover) {
-  img {
-    /* filter: saturate(0); */
-  }
-}
-
 .desenvolvemos .box-card .card {
   background-color: var(--bg-color);
   display: flex;
