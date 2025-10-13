@@ -139,6 +139,21 @@
     width: 122px;
     z-index: -1;
   }
+
+  &:hover .text-area .text {
+    transform: translateY(-20px);
+  }
+}
+
+.header nav .btn-local .btn .creat-count .text-area {
+  overflow: hidden;
+  height: 22px;
+  text-wrap: nowrap;
+}
+
+.header nav .btn-local .btn .creat-count .text-area .text {
+  transition: 0.3s ease;
+  font-size: 1rem;
 }
 
 .header nav.scrolled .btn-local .btn .creat-count {
@@ -166,7 +181,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .header nav .logo p,
   .header nav .btn-local .btn .creat-count {
     display: none;

@@ -162,14 +162,18 @@ export function Header() {
         </ul>
 
         <div className="btn-local">
-          
           <BtnChangeTheme />
 
           <div className="btn">
-            <button className="border-gradient creat-count">Criar conta</button>
+            <button className="border-gradient creat-count">
+              <div className="text-area">
+                <div className="text">Criar conta</div>
+                <div className="text">Criar conta</div>
+              </div>
+            </button>
           </div>
 
-          <UserMenu/>
+          <UserMenu />
 
           <BtnShowMenuMob
             menuAberto={menuMobAberto}

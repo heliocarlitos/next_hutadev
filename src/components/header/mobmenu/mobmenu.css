@@ -19,7 +19,7 @@
   right: 0;
   z-index: 0;
 }
- 
+
 .mobmenu {
   width: 0;
   max-width: 400px !important;
@@ -193,7 +193,9 @@
     margin-top: 0px;
     transform: translateY(-39px);
   }
+}
 
+@media (max-width: 480px) {
   .mobmenu ul li .creat-count {
     display: flex;
   }
