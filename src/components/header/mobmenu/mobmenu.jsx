@@ -231,8 +231,7 @@ export function MobMenu({ open, onClose }) {
                 <div className="detal-link">
                   <p className="title"> Componentes Web </p>
                   <p className="text">
-                    Criação, personalização e integração de módulos e
-                    funcionalidades.
+                    Criação, personalização e integração de módulos.
                   </p>
                 </div>
               </Link>
