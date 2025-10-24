@@ -159,8 +159,7 @@ span {
 
 h1,
 h2,
-h3,
-.title {
+h3{
   font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
