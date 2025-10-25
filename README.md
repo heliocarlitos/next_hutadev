@@ -1,4 +1,4 @@
-# Próximo Site da Hutauta Developer
+# Next Huta Dev
 
 <div align="center">
   
@@ -16,21 +16,20 @@
      <img alt="YOUR-ALT-TEXT" src="https://nexthutadev.netlify.app/demo-light.webp">
 </picture>
 
-
-<!--<picture>
-     <source media="(prefers-color-scheme: dark)" srcset="imagens/preview.webp">
-     <source media="(prefers-color-scheme: light)" srcset="imagens/preview.webp">
-     <img alt="Imagem de demo" src="imagens/preview.webp">
-</picture>-->
-
 ## Sobre
 
-Este projecto consiste na actualização do site da [Hutauta Developer](https://hutadev.vercel.app/). O nosso propósito é transmitir a essência do que entregamos aos nossos clientes: sites modernos, alinhados às novas tendências do mercado e capazes de acompanhar a evolução dos tempos. Apostamos em tecnologias actuais, sem nunca perder de vista os objectivos principais de cada cliente. Assim, garantimos que os seus sites se mantenham sempre actualizados, rápidos e seguros.
+Este projecto consiste na actualização do site da
+[Hutauta Developer](https://hutadev.vercel.app/). O nosso propósito é transmitir
+a essência do que entregamos aos nossos clientes: sites modernos, alinhados às
+novas tendências do mercado e capazes de acompanhar a evolução dos tempos.
+Apostamos em tecnologias actuais, sem nunca perder de vista os objectivos
+principais de cada cliente. Assim, garantimos que os seus sites se mantenham
+sempre actualizados, rápidos e seguros.
 
 **SEO**
 
-- [SEO MONILE](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=mobile)
-- [SEO DESKTOP](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=desktop)
+- [📱 MOBILE](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=mobile)
+- [💻 DESKTOP](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=desktop)
 
 ## Tecnologias Utilizadas
 
@@ -68,7 +67,8 @@ Documentação da biblioteca [aqui](https://react-icons.github.io/react-icons/).
 
 Se deseja contribuir para o desenvolvimento deste projecto, siga estas etapas:
 
-1. Faça um fork deste repositório agora clicando [aqui](https://github.com/heliocarlitos/next_hutadev/fork). Ou
+1. Faça um fork deste repositório agora clicando
+   [aqui](https://github.com/heliocarlitos/next_hutadev/fork). Ou
 
 2. Clone o seu fork localmente:
 
@@ -95,10 +95,12 @@ git commit -m "Descrição clara da alteração"
 git push origin minha-feature
 ```
 
-6. Abra um **Pull Request** para o repositório original clicando [aqui](https://github.com/heliocarlitos/next_hutadev/pulls).
+6. Abra um **Pull Request** para o repositório original clicando
+   [aqui](https://github.com/heliocarlitos/next_hutadev/pulls).
 
-> [!WARNING]
-> Com tempo esse projecto será privado, mas todos os contribuentes abaixo terão um espaço dentro do nosso site, onde expresaremos com carinho a nossa gradidão por contribuir no desenvolvimento deste projecto.
+> [!WARNING] Com tempo esse projecto será privado, mas todos os contribuentes
+> abaixo terão um espaço dentro do nosso site, onde expresaremos com carinho a
+> nossa gradidão por contribuir no desenvolvimento deste projecto.
 
 ## Colaborador
 
