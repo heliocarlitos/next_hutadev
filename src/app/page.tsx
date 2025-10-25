@@ -11,8 +11,8 @@ export default function Home() {
       {/* <br/> */}
       <Cumpany />
       <Desenvolvemos />
-      <Aplication />
-      <Stats />
+      {/* <Aplication /> */}
+      {/* <Stats /> */}
     </>
   );
 }

@@ -110,7 +110,6 @@ export function Desenvolvemos() {
           </div>
         </div>
 
-        res
       </div>
     </>
   );
