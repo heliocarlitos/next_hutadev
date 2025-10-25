@@ -33,6 +33,14 @@
   padding: 1rem;
   border: var(--thin-border);
 
+  &:hover{
+    background-color: var(--lilac-color);
+
+    & img{
+      filter: contrast(0) brightness(200%);
+    }
+  }
+
   &:first-child {
     border-radius: 10px 0 0 10px;
   }
