@@ -10,10 +10,11 @@
 
 </div>
 
+
 <picture>
-     <!-- <source media="(prefers-color-scheme: dark)" srcset="https://nexthutadev.netlify.app/demo-dark.webp"> -->
-     <source media="(prefers-color-scheme: light)" srcset="https://nexthutadev.netlify.app/demo-light.webp">
-     <img alt="YOUR-ALT-TEXT" src="https://nexthutadev.netlify.app/demo-light.webp">
+     <!-- <source media="(prefers-color-scheme: dark)" srcset="https://nexthutadev.vercel.app/demo-dark.webp"> -->
+     <source media="(prefers-color-scheme: light)" srcset="https://nexthutadev.vercel.app/demo-light.webp">
+     <img alt="YOUR-ALT-TEXT" src="https://nexthutadev.vercel.app/demo-light.webp">
 </picture>
 
 ## Sobre
