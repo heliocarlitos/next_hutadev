@@ -12,7 +12,7 @@ export function Cumpany() {
 
         <div className="logos">
           <figure>
-            <img src="image/logo/casais-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
+            <img src="image/logo/lam-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
           </figure>
           <figure>
             <img src="image/logo/cfm-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
