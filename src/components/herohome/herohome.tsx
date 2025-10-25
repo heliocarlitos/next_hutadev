@@ -86,7 +86,6 @@ export function HeroHome() {
               height={600}
               className="light"
               loading="lazy"
-              fetchPriority="high"
             />
           </figure>
         </div>
