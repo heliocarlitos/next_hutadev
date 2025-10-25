@@ -7,7 +7,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="pt" className="light">
+        <html lang="pt" className="dark">
             <head>
                 <meta charSet="UTF-8" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

@@ -14,18 +14,19 @@ export function Cumpany() {
           <figure>
             <img src="image/logo/lam-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
           </figure>
+          
           <figure>
             <img src="image/logo/cfm-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
           </figure>
+          
           <figure>
             <img src="image/logo/global-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
           </figure>
+          
           <figure>
             <img src="image/logo/mozrural-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
           </figure>
-          <figure>
-            <img src="image/logo/pagaqui-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
-          </figure>
+
         </div>
       </div>
     </>

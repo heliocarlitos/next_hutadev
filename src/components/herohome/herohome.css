@@ -142,13 +142,17 @@
   overflow: hidden;
   max-width: 100%;
   background-color: var(--bg-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .herohome .banner img {
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
   width: 95%;
   height: auto;
   display: none;
+  border: var(--thin-border);
 }
 
 html:not(.light) .herohome .banner img.dark {

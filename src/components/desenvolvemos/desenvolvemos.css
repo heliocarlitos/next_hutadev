@@ -20,21 +20,6 @@
   padding: 30px;
   gap: 20px;
   width: 100%;
-  position: relative;
-  z-index: 1;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 25px;
-    border: var(--thin-border);
-    transform: translate(-1px, -1px);
-    z-index: -1;
-  }
 
   &:hover .box-icon .icon {
     transform: translate(20px, -20px);
