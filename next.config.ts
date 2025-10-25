@@ -1,9 +1,13 @@
-import { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  // adiciona aqui outras configs que queres
-}
+  experimental: {
+    // Ativa recursos experimentais, se necessário
+  },
+  images: {
+    // Configurações de imagens, se usares domínios externos
+    domains: ['via.placeholder.com'], 
+  },
+};
 
-export default nextConfig
+module.exports = nextConfig;

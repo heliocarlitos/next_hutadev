@@ -10,90 +10,90 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import "./herohome.css";
-const blurData: Record<string, string> = require('../../../blurData.json');
+
+// Ajusta o caminho relativo conforme a localização do ficheiro
+import blurData from "../../../blurData.json";
+
 export function HeroHome() {
   return (
-    <>
-      <div className="herohome">
-        <p className="title">
-          Resultados mensuráveis em design, desenvolvimento e marketing.
-        </p>
+    <div className="herohome">
+      <p className="title">
+        Resultados mensuráveis em design, desenvolvimento e marketing.
+      </p>
 
-        <p className="text">
-          Nossa missão é simplificar as complexidades das startups modernas de
-          negócios e tecnologia, permitindo que nossos clientes se concentrem no
-          que realmente importa - seu crescimento e sucesso.
-        </p>
+      <p className="text">
+        Nossa missão é simplificar as complexidades das startups modernas de
+        negócios e tecnologia, permitindo que nossos clientes se concentrem no
+        que realmente importa - seu crescimento e sucesso.
+      </p>
 
-        <div className="btn">
-          <button className="start">
-            <div className="text-area">
-              <div className="text">Começar agora</div>
-              <div className="text">Começar agora</div>
-            </div>
-            <div className="icon">
-              <BsStars />
-            </div>
-          </button>
+      <div className="btn">
+        <button className="start">
+          <div className="text-area">
+            <div className="text">Começar agora</div>
+            <div className="text">Começar agora</div>
+          </div>
+          <div className="icon">
+            <BsStars />
+          </div>
+        </button>
 
-          <Link href="#" className="who-are">
-            <div className="text-area">
-              <div className="text">Sobre nós</div>
-              <div className="text">Sobre nós</div>
-            </div>
-          </Link>
+        <Link href="#" className="who-are">
+          <div className="text-area">
+            <div className="text">Sobre nós</div>
+            <div className="text">Sobre nós</div>
+          </div>
+        </Link>
+      </div>
+
+      <div className="tecnology">
+        <div className="icon" data-text="HTML5">
+          <IoLogoHtml5 />
         </div>
-
-        <div className="tecnology">
-          <div className="icon" data-text="HTML5">
-            <IoLogoHtml5 />
-          </div>
-          <div className="icon" data-text="Tailwind">
-            <RiTailwindCssFill />
-          </div>
-
-          <div className="icon" data-text="Figma">
-            <IoLogoFigma />
-          </div>
-
-          <div className="icon" data-text="React">
-            <IoLogoReact />
-          </div>
-
-          <div className="icon" data-text="TypeScript">
-            <SiTypescript />
-          </div>
-
-          <div className="icon" data-text="Firebase">
-            <IoLogoFirebase />
-          </div>
+        <div className="icon" data-text="Tailwind">
+          <RiTailwindCssFill />
         </div>
-
-        <div className="banner">
-          <figure>
-            <Image
-              src="/image/relative/dark.webp"
-              alt="capa dark"
-              width={980}
-              height={600}
-              className="dark"
-              fetchPriority="high"
-              placeholder="blur"
-              blurDataURL={blurData["/image/relative/dark.webp"]}
-            />
-            <Image
-              src="/image/relative/light.webp"
-              alt="capa light"
-              width={980}
-              height={600}
-              className="light"
-              fetchPriority="high"
-              placeholder="blur"
-              blurDataURL={blurData["/image/relative/light.webp"]}
-            />
-          </figure>
+        <div className="icon" data-text="Figma">
+          <IoLogoFigma />
+        </div>
+        <div className="icon" data-text="React">
+          <IoLogoReact />
+        </div>
+        <div className="icon" data-text="TypeScript">
+          <SiTypescript />
+        </div>
+        <div className="icon" data-text="Firebase">
+          <IoLogoFirebase />
         </div>
       </div>
-    </>
+
+      <div className="banner">
+        <figure>
+          <Image
+            src="/image/relative/hero-small.png"
+            alt="capa dark"
+            width={980}
+            height={600}
+            className="dark"
+            fetchPriority="high"
+            placeholder="blur"
+            blurDataURL={blurData["/image/relative/hero-small.png"]}
+          />
+          <Image
+            src="/image/relative/light.webp"
+            alt="capa light"
+            width={980}
+            height={600}
+            className="light"
+            fetchPriority="high"
+            placeholder="blur"
+            blurDataURL={
+              blurData["/image/relative/light.webp"] ||
+              blurData["/image/relative/hero-small.png"]
+            }
+          />
+        </figure>
+      </div>
+    </div>
   );
 }
