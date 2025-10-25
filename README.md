@@ -26,16 +26,12 @@ No entanto, reconhecemos que o valor de uma empresa não se mede apenas pelas fe
 
 Por isso, decidimos reconstruir o nosso espaço digital desde o início, com uma abordagem mais clara, transparente e alinhada com aquilo que defendemos. A Huta Dev está de cara nova, mas com a mesma vontade de impulsionar quem constrói o futuro.
 
-**SEO**
-
-- [📱 MOBILE](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=mobile)
-- [💻 DESKTOP](https://pagespeed.web.dev/analysis/https-nexthutadev-vercel-app/4w4qkrt0ro?form_factor=desktop)
-
 ## Tecnologias Utilizadas
 
 - **Next.js**
 - **React**
 - **TypeScript**
+- **Firebase**
 - **Vercel (deploy)**
 
 ## Instalação e Uso
