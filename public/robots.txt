@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /drafts/
-
-Allow: /
-
-Sitemap: https://nexthutadev.vercel.app/sitemap.xml
-

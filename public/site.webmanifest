@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Hutauta Developer",
+  "short_name": "HutaDev",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
