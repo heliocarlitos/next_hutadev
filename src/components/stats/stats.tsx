@@ -19,8 +19,8 @@ export function Stats() {
             <img
               src="image/relative/stats.webp"
               alt="Capa"
-              width={400}
-              height={500}
+              width="400"
+              height="700"
               loading="lazy"
               className="bg-img"
             />
