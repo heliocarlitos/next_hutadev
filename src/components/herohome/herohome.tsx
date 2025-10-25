@@ -77,7 +77,7 @@ export function HeroHome() {
               width={980}
               height={600}
               className="dark"
-              loading="lazy"
+              fetchPriority="high"
             />
             <img
               src="/image/relative/light.webp"
@@ -85,7 +85,7 @@ export function HeroHome() {
               width={980}
               height={600}
               className="light"
-              loading="lazy"
+              fetchPriority="high"
             />
           </figure>
         </div>
