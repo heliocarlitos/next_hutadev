@@ -65,14 +65,64 @@
 }
 
 .mega_menu_produtos .box-link .box-ul ul .ver-todos {
-  align-items: end;
   border: var(--thin-border);
   border-radius: 10px;
   display: flex;
-  height: 150px;
   justify-content: center;
+  flex-direction: column;
   margin-top: 20px;
   padding: 20px;
+  gap: 10px;
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos .more-produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-10px);
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos .more-produto .img {
+  display: flex;
+  align-items: center;
+  transform: translateX(40px);
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos .more-produto .img figure {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--bg-color);
+
+  &:nth-child(2) {
+    transform: translateX(-50%);
+  }
+  &:nth-child(3) {
+    transform: translateX(-100%);
+  }
+  &:nth-child(4) {
+    transform: translateX(-150%);
+  }
+}
+
+.mega_menu_produtos
+  .box-link
+  .box-ul
+  ul
+  .ver-todos
+  .more-produto
+  .img
+  figure
+  img {
+  width: 35px;
+  height: 35px;
+}
+
+.mega_menu_produtos .box-link .box-ul ul .ver-todos .more-produto p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Chakra Petch", "Outfit", "Poppins", sans-serif;
+  color: var(--title-color);
+  transform: translateX(-10px);
 }
 
 .mega_menu_produtos .box-link .box-ul ul .ver-todos a {

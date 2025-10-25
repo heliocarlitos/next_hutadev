@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import "./megamenu.css";
 import { IoConstruct, IoGlobeSharp, IoDocument } from "react-icons/io5";
@@ -67,12 +68,57 @@ export function Produtos({ onLinkClick }: DesktopMenuProps) {
                   </div>
                   <div className="detal-link">
                     <p className="title">Presentes</p>
-                    <p className="text">Sistemas operacionais, programas, agentes de IA, templates etc.</p>
+                    <p className="text">
+                      Sistemas operacionais, programas, agentes de IA, templates
+                      etc.
+                    </p>
                   </div>
                 </Link>
               </li>
 
               <div className="ver-todos">
+                <div className="more-produto">
+                  <div className="img">
+                    <figure>
+                      <img
+                        src="https://dummyimage.com/30/999/000&text=H"
+                        width={30}
+                        height={30}
+                        alt="placeholder"
+                      />
+                    </figure>
+
+                    <figure>
+                      <img
+                        src="https://dummyimage.com/30/999/000&text=U"
+                        width={30}
+                        height={30}
+                        alt="placeholder"
+                      />
+                    </figure>
+
+                    <figure>
+                      <img
+                        src="https://dummyimage.com/30/999/000&text=T"
+                        width={30}
+                        height={30}
+                        alt="placeholder"
+                      />
+                    </figure>
+
+                    <figure>
+                      <img
+                        src="https://dummyimage.com/30/999/000&text=A"
+                        width={30}
+                        height={30}
+                        alt="placeholder"
+                      />
+                    </figure>
+                  </div>
+
+                  <p>5 +</p>
+                </div>
+
                 <Link href="/produtos" onClick={onLinkClick}>
                   Ver todos produtos
                 </Link>
