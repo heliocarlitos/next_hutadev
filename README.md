@@ -11,9 +11,9 @@
 </div>
 
 <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="/demo-dark.webp">
-     <source media="(prefers-color-scheme: light)" srcset="/demo-light.webp">
-     <img alt="YOUR-ALT-TEXT" src="/demo-light.webp">
+     <source media="(prefers-color-scheme: dark)" srcset="https://nexthutadev.netlify.app/demo-dark.webp">
+     <source media="(prefers-color-scheme: light)" srcset="https://nexthutadev.netlify.app/demo-light.webp">
+     <img alt="YOUR-ALT-TEXT" src="https://nexthutadev.netlify.app/demo-light.webp">
 </picture>
 
 <!--<picture>
