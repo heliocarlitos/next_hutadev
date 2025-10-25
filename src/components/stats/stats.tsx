@@ -7,7 +7,7 @@ export function Stats() {
           <div className="logo">
             <figure>
               <img
-                src="/logo_png.webp"
+                src="/logo.webp"
                 alt="Logo da huta dev"
                 width={100}
                 height={100}
