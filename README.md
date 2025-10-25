@@ -118,7 +118,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projecto:
 <tr>
 
 <td align="center" title="Ver perfil da Huta Dev">
-     <a href="https://github.com/hutadev">
+     <a href="https://github.com/hutadev" target="_blank">
      <img src="https://avatars3.githubusercontent.com/u/176042160" width="100px" height="100px" alt="Foto da Huta Dev no GitHub"/><br>
      <sub>
           <b>Huta Dev</b>
@@ -127,7 +127,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projecto:
 </td>
 
 <td align="center" title="Ver perfil de Hélio Carlitos">
-     <a href="https://github.com/heliocarlitos">
+     <a href="https://github.com/heliocarlitos" target="_blank">
      <img src="https://avatars3.githubusercontent.com/u/112761333" width="100px" height="100px" alt="Foto do Hélio Carlitos no GitHub"/><br>
      <sub>
           <b>Hélio Carlitos</b>
