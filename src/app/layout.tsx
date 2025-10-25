@@ -32,8 +32,9 @@ export default function RootLayout({
           content="Transforme suas ideias em soluções digitais eficientes com Huta Dev."
         />
         <meta property="og:image" content="/demo-light.webp" />
-        <meta property="og:url" content="https://nexthutadev.netlify.app/" />
+        <meta property="og:url" content="https://nexthutadev.vercel.app/" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://nexthutadev.vercel.app/" />
 
         <meta name="twitter:card" content="/demo-light.webp" />
         <meta
