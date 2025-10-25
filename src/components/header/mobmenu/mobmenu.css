@@ -29,7 +29,7 @@
   right: 0;
   padding: 20px 0 !important;
   display: flex;
-  align-items: start !important;
+  align-items: flex-start !important;
   background-color: var(--sec-bg-color);
   box-shadow: var(--normal-shadow);
   height: 100dvh;
@@ -213,3 +213,4 @@
     padding-bottom: 150px !important;
   }
 }
+
