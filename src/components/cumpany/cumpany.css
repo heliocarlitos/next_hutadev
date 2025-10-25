@@ -1,0 +1,112 @@
+.cumpany {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.cumpany .intro-logo {
+  max-width: 600px;
+  margin: auto;
+}
+
+.cumpany .intro-logo .title {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.cumpany .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cumpany .logos figure {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  height: 100px;
+  padding: 1rem;
+  border: var(--thin-border);
+
+  &:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  &:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.cumpany .logos img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+@media screen and (max-width: 801px) {
+  .cumpany .logos figure {
+    &:nth-child(4) {
+      border-radius: 0 10px 10px 0;
+    }
+    &:nth-child(5) {
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .cumpany .logos figure {
+    &:nth-child(3) {
+      border-radius: 0 10px 10px 0;
+    }
+    &:nth-child(4) {
+      border-radius: 10px 0 0 10px;
+    }
+    &:nth-child(5) {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .cumpany .logos figure {
+    &:nth-child(2) {
+      border-radius: 0 10px 10px 0;
+    }
+    &:nth-child(3) {
+      border-radius: 10px 0 0 10px;
+    }
+    &:nth-child(4) {
+      border-radius: 0 10px 10px 0;
+    }
+    &:nth-child(5) {
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cumpany .logos {
+    display: flex;
+    flex-direction: column;
+  }
+  .cumpany .logos figure {
+    width: 100%;
+    &:nth-child(1) {
+      border-radius: 10px 10px 0 0 !important;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      border-radius: 0 !important;
+    }
+    &:nth-child(5) {
+      border-radius: 0 0 10px 10px !important;
+    }
+  }
+}
