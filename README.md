@@ -18,13 +18,25 @@
 
 ## Sobre
 
-A Huta Dev entrará numa nova etapa. O nosso site esta sendo totalmente reformulado para representar quem somos hoje e a direcção que queremos seguir no futuro. Esta actualização não será apenas visual. Resulta de uma reflexão profunda sobre o que oferecemos e sobre o impacto que queremos ter num mercado tecnológico que evolui a cada dia.<br/>
+A Huta Dev entrará numa nova etapa. O nosso site esta sendo totalmente
+reformulado para representar quem somos hoje e a direcção que queremos seguir no
+futuro. Esta actualização não será apenas visual. Resulta de uma reflexão
+profunda sobre o que oferecemos e sobre o impacto que queremos ter num mercado
+tecnológico que evolui a cada dia.<br/>
 
-O nosso foco sempre esteve na criação de soluções práticas que facilitem o trabalho de profissionais e negócios que dependem do digital para crescer. Privilegiamos a utilidade, a eficiência e a possibilidade de cada cliente alcançar mais com menos obstáculos.<br/>
+O nosso foco sempre esteve na criação de soluções práticas que facilitem o
+trabalho de profissionais e negócios que dependem do digital para crescer.
+Privilegiamos a utilidade, a eficiência e a possibilidade de cada cliente
+alcançar mais com menos obstáculos.<br/>
 
-No entanto, reconhecemos que o valor de uma empresa não se mede apenas pelas ferramentas que disponibiliza. Importa mostrar a razão do que fazemos, a forma como trabalhamos e a identidade das pessoas que dão vida à Huta Dev.<br/>
+No entanto, reconhecemos que o valor de uma empresa não se mede apenas pelas
+ferramentas que disponibiliza. Importa mostrar a razão do que fazemos, a forma
+como trabalhamos e a identidade das pessoas que dão vida à Huta Dev.<br/>
 
-Por isso, decidimos reconstruir o nosso espaço digital desde o início, com uma abordagem mais clara, transparente e alinhada com aquilo que defendemos. A Huta Dev está de cara nova, mas com a mesma vontade de impulsionar quem constrói o futuro.
+Por isso, decidimos reconstruir o nosso espaço digital desde o início, com uma
+abordagem mais clara, transparente e alinhada com aquilo que defendemos. A Huta
+Dev está de cara nova, mas com a mesma vontade de impulsionar quem constrói o
+futuro.
 
 ## Tecnologias Utilizadas
 
@@ -104,15 +116,27 @@ Agradecemos às seguintes pessoas que contribuíram para este projecto:
 
 <table>
 <tr>
+
+<td align="center" title="Ver perfil da Huta Dev">
+     <a href="https://github.com/hutadev">
+     <img src="https://avatars3.githubusercontent.com/u/176042160" width="100px" height="100px" alt="Foto da Huta Dev no GitHub"/><br>
+     <sub>
+          <b>Huta Dev</b>
+     </sub>
+     </a>
+</td>
+
 <td align="center" title="Ver perfil de Hélio Carlitos">
      <a href="https://github.com/heliocarlitos">
-     <img src="https://avatars3.githubusercontent.com/u/112761333" width="100px;" alt="Foto do Hélio Carlitos no GitHub"/><br>
+     <img src="https://avatars3.githubusercontent.com/u/112761333" width="100px" height="100px" alt="Foto do Hélio Carlitos no GitHub"/><br>
      <sub>
           <b>Hélio Carlitos</b>
      </sub>
      </a>
 </td>
+
 </tr>
+
 </table>
 
 <hr/>
