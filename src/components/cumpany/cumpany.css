@@ -20,7 +20,6 @@
 .cumpany .logos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-gap: 0px;
   justify-content: center;
   align-items: center;
 }
@@ -30,7 +29,7 @@
   align-items: center !important;
   justify-content: center;
   height: 100px;
-  padding: 1rem;
+  padding: 0 1rem;
   border: var(--thin-border);
 
   &:hover{

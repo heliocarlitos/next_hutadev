@@ -65,7 +65,7 @@ export function Header() {
         <Link href="/" className={`logo ${pathname === "/" ? "active" : ""}`}>
           <figure>
             <img
-              src="/logo_png.webp"
+              src="/logo.webp"
               alt="Logo da Huta Dev"
               width={30}
               height={30}
