@@ -18,13 +18,13 @@
 
 ## Sobre
 
-Este projecto consiste na actualização do site da
-[Hutauta Developer](https://hutadev.vercel.app/). O nosso propósito é transmitir
-a essência do que entregamos aos nossos clientes: sites modernos, alinhados às
-novas tendências do mercado e capazes de acompanhar a evolução dos tempos.
-Apostamos em tecnologias actuais, sem nunca perder de vista os objectivos
-principais de cada cliente. Assim, garantimos que os seus sites se mantenham
-sempre actualizados, rápidos e seguros.
+A Huta Dev entrará numa nova etapa. O nosso site esta sendo totalmente reformulado para representar quem somos hoje e a direcção que queremos seguir no futuro. Esta actualização não será apenas visual. Resulta de uma reflexão profunda sobre o que oferecemos e sobre o impacto que queremos ter num mercado tecnológico que evolui a cada dia.<br/>
+
+O nosso foco sempre esteve na criação de soluções práticas que facilitem o trabalho de profissionais e negócios que dependem do digital para crescer. Privilegiamos a utilidade, a eficiência e a possibilidade de cada cliente alcançar mais com menos obstáculos.<br/>
+
+No entanto, reconhecemos que o valor de uma empresa não se mede apenas pelas ferramentas que disponibiliza. Importa mostrar a razão do que fazemos, a forma como trabalhamos e a identidade das pessoas que dão vida à Huta Dev.<br/>
+
+Por isso, decidimos reconstruir o nosso espaço digital desde o início, com uma abordagem mais clara, transparente e alinhada com aquilo que defendemos. A Huta Dev está de cara nova, mas com a mesma vontade de impulsionar quem constrói o futuro.
 
 **SEO**
 
