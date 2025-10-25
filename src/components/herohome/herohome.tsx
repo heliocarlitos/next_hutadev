@@ -1,6 +1,5 @@
 import { BsStars } from "react-icons/bs";
 import Link from "next/link";
-import Image from "next/image";
 import {
   IoLogoHtml5,
   IoLogoFigma,

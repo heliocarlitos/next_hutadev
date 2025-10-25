@@ -85,7 +85,6 @@
   gap: 5px;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: var(--bg-color);
 }
 
 .herohome .tecnology .icon {
@@ -138,10 +137,8 @@
 }
 
 .herohome .banner {
-  background-color: var(--black-soft);
   overflow: hidden;
   max-width: 100%;
-  background-color: var(--bg-color);
   position: relative;
   display: flex;
   justify-content: center;
