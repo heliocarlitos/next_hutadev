@@ -78,7 +78,6 @@ export function HeroHome() {
               height={600}
               className="dark"
               loading="lazy"
-              fetchPriority="high"
             />
             <img
               src="/image/relative/light.webp"

@@ -10,6 +10,12 @@
 
 </div>
 
+<picture>
+     <source media="(prefers-color-scheme: dark)" srcset="/demo-dark.webp">
+     <source media="(prefers-color-scheme: light)" srcset="/demo-light.webp">
+     <img alt="YOUR-ALT-TEXT" src="/demo-light.webp">
+</picture>
+
 <!--<picture>
      <source media="(prefers-color-scheme: dark)" srcset="imagens/preview.webp">
      <source media="(prefers-color-scheme: light)" srcset="imagens/preview.webp">
