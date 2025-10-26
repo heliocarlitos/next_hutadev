@@ -70,14 +70,17 @@ export function HeroHome() {
       <div className="banner">
         <figure>
           <Image
-            src="/image/relative/hero-small.png"
+            src="/image/relative/dark.webp"
             alt="capa dark"
             width={980}
             height={600}
             className="dark"
             fetchPriority="high"
             placeholder="blur"
-            blurDataURL={blurData["/image/relative/hero-small.png"]}
+              blurDataURL={
+              blurData["/image/relative/dark.webp"] ||
+              blurData["/image/relative/hero-small.png"]
+            }
           />
           <Image
             src="/image/relative/light.webp"

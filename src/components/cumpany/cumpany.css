@@ -35,10 +35,10 @@
   padding: 0 1rem;
   border: var(--thin-border);
 
-  &:hover{
+  &:hover {
     background-color: var(--lilac-color);
 
-    & img{
+    & img {
       filter: contrast(0) brightness(200%);
     }
   }
@@ -56,6 +56,10 @@
   width: 100%;
   max-width: 100px;
   height: auto;
+}
+
+html:not(.light) .cumpany .logos .corporatecc {
+  filter: invert(100%) saturate(0);
 }
 
 @media screen and (max-width: 801px) {

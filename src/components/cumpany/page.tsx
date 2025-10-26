@@ -15,7 +15,7 @@ export function Cumpany() {
           </figure>
 
           <figure>
-            <img src="image/logo/corporatecc-logo.webp" alt="Logo" width={150} height={40} loading="lazy"/>
+            <img src="image/logo/corporatecc-logo.webp" alt="Logo" width={150} height={40} loading="lazy" className="corporatecc"/>
           </figure>
 
           <figure>
