@@ -17,7 +17,7 @@
   font-size: 3rem;
   max-width: 900px;
   font-weight: 500;
-  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  font-family: var(--font-outfit);
   color: var(--text-dark-light);
   padding: 0 10px;
 }
@@ -68,7 +68,7 @@
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: "Fira Code";
+  font-family: var(--font-fira);
 }
 
 .herohome .btn .who-are {

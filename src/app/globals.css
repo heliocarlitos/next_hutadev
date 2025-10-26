@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-display: swap;
-  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  font-family: var(--font-outfit), var(--font-poppins), var(--font-chakra), sans-serif;
   font-size: 1rem;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@
 html {
   color: var(--cor-do-texto);
   font-display: swap;
-  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  font-family: var(--font-outfit), var(--font-poppins), var(--font-chakra), sans-serif;
   scroll-padding-top: 100px;
 }
 
@@ -81,6 +81,11 @@ html {
   --normal-shadow: -8px 8px 20px #00000014;
   --scroll-nav: #18181bef;
   --text: #a7a7a7;
+  /* Variáveis das fontes importadas via next/font */
+  --font-chakra: "Chakra Petch", sans-serif;
+  --font-fira: "Fira Code", monospace;
+  --font-outfit: "Outfit", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 .light {
@@ -101,7 +106,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  font-family: var(--font-outfit), var(--font-poppins), var(--font-chakra), sans-serif;
   margin-left: auto;
   margin-right: auto;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -219,7 +224,7 @@ svg {
 
 p {
   line-height: 1.5em;
-  font-family: "Outfit", "Poppins", "Chakra Petch", sans-serif;
+  font-family: var(--font-outfit), var(--font-poppins), var(--font-chakra), sans-serif;
 }
 
 .btn {
@@ -232,7 +237,7 @@ p {
   color: var(--text-dark-light);
   font-weight: bold;
   line-height: 1.2;
-  font-family: "Chakra Petch", "Outfit", sans-serif;
+  font-family: var(--font-chakra), var(--font-outfit), sans-serif;
   transition: 0.3s ease;
 }
 
