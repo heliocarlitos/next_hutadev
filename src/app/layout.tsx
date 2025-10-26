@@ -2,6 +2,16 @@ import Script from "next/script";
 import "./globals.css";
 import { Header } from "../components/header/header";
 
+export const metadata = {
+  title: "HUTAUTA DEVELOPER",
+  description: "Plataforma de serviços de desenvolvimento web e tecnologia.",
+  manifest: "/manifest.json",
+};
+
+export const viewport = {
+  themeColor: "#ffffff",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -76,10 +86,15 @@ export default function RootLayout({
             href="/apple-touch-icon.png"
           />
           <meta name="apple-mobile-web-app-title" content="Hutadev" />
-          <link rel="manifest" href="/site.webmanifest" />
+          {/* <link rel="manifest" href="/site.webmanifest" /> */}
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link href="https://fonts.gstatic.com" rel="preload" as="font" crossOrigin="anonymous" />
+          <link
+            href="https://fonts.gstatic.com"
+            rel="preload"
+            as="font"
+            crossOrigin="anonymous"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"

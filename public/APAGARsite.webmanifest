@@ -1,6 +1,10 @@
 {
   "name": "HUTAUTA DEVELOPER",
   "short_name": "HutaDev",
+  "description": "Plataforma de serviços de desenvolvimento web e tecnologia.",
+  "lang": "pt-PT",
+  "start_url": "https://nexthutadev.vercel.app/",
+  "scope": "https://nexthutadev.vercel.app/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -17,5 +21,8 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#09090b",
-  "display": "standalone"
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "business"],
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"]
 }
