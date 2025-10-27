@@ -55,6 +55,7 @@
 
 .howwork .update-plan {
   display: flex;
+  align-items: center;
   gap: 30px;
   margin-top: 30px;
 }
