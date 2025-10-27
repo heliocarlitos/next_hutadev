@@ -87,7 +87,7 @@
   background-color: var(--lilac-color);
   color: var(--white-color);
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid transparent;
   gap: 10px;
   width: 100% !important;
