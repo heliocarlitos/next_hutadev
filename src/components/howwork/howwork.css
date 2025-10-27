@@ -2,7 +2,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
 
 .howwork .box {
@@ -54,6 +54,7 @@
 .howwork .update-plan {
   display: flex;
   gap: 30px;
+  margin-top: 30px;
 }
 
 .howwork .update-plan .info {
@@ -134,7 +135,11 @@
 
 @media screen and (max-width: 984px) {
   .howwork .box {
-    gap: 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .howwork .box .it-work {
+    gap: 30px;
   }
 
   .howwork .update-plan {
@@ -143,13 +148,7 @@
 
   .howwork .update-plan .info {
     max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 984px) {
-  .howwork .box {
     gap: 30px;
-    flex-direction: column;
   }
 
   .howwork .box figure img {
@@ -174,12 +173,25 @@
 }
 
 @media screen and (max-width: 480px) {
+  .howwork .box {
+    margin-top: 20px;
+  }
+
   .howwork .update-plan .info .btn {
     flex-direction: column;
   }
 
   .howwork .update-plan .info .btn .text-area .text {
     transform: translateY(2px);
+  }
+
+  .howwork .update-plan .info {
+    gap: 20px;
+  }
+
+  .howwork .update-plan .info .title,
+  .howwork .update-plan .info .title span {
+    font-size: 1.6rem;
   }
 }
 
