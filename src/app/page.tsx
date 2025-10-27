@@ -2,6 +2,7 @@ import { Aplication } from "@/components/aplication/aplication";
 import { Cumpany } from "@/components/cumpany/page";
 import { Desenvolvemos } from "@/components/desenvolvemos/desenvolvemos";
 import { HeroHome } from "@/components/herohome/herohome";
+import { Howwork } from "@/components/howwork/howwork";
 import { Stats } from "@/components/stats/stats";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       {/* <br/> */}
       <Cumpany />
       <Desenvolvemos />
+      <Howwork/>
       {/* <Aplication /> */}
       {/* <Stats /> */}
     </>

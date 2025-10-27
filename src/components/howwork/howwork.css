@@ -1,0 +1,213 @@
+.howwork {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.howwork .box {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.howwork .box figure img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.howwork .box .it-work {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.howwork .box .it-work .item {
+  display: flex;
+  gap: 20px;
+}
+
+.howwork .box .it-work .item .item-number p {
+  background-color: var(--lilac-transparent);
+  color: var(--lilac-color);
+  font-size: 1.6rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.howwork .box .it-work .item .title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.howwork .update-plan {
+  display: flex;
+  gap: 30px;
+}
+
+.howwork .update-plan .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.howwork .update-plan .info .title,
+.howwork .update-plan .info .title span {
+  font-size: 2rem;
+  font-family: var(--font-chakra);
+}
+
+.howwork .update-plan .info .title span {
+  color: var(--lilac-color);
+}
+
+.howwork .update-plan .info .btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.howwork .update-plan .info .btn .start,
+.howwork .update-plan .info .btn .who-are {
+  background-color: var(--lilac-color);
+  color: var(--white-color);
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  gap: 10px;
+  width: 100% !important;
+
+  &:focus {
+    border: 1px solid var(--text-dark-light);
+  }
+
+  &:hover .text-area .text {
+    transform: translateY(-21px);
+  }
+}
+
+.howwork .update-plan .info .btn .text-area {
+  overflow: hidden;
+  height: 25px;
+  text-wrap: nowrap;
+}
+
+.howwork .update-plan .info .btn .text-area .text {
+  transition: 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: var(--font-fira);
+  margin-top: 1px;
+}
+
+.howwork .update-plan .info .btn .who-are {
+  border: var(--border);
+  background-color: transparent;
+  color: var(--text-dark-light);
+}
+
+.howwork .update-plan figure {
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-radius: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.howwork .update-plan figure img {
+  border-radius: 10px 0 0 0;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 984px) {
+  .howwork .box {
+    gap: 20px;
+  }
+
+  .howwork .update-plan {
+    flex-direction: column;
+  }
+
+  .howwork .update-plan .info {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .howwork .box {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .howwork .box figure img {
+    aspect-ratio: 16/10;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .howwork .box figure img {
+    border-radius: 20px;
+  }
+
+  .howwork .box .it-work {
+    gap: 25px;
+  }
+
+  .howwork .box .it-work .item .title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .howwork .update-plan .info .btn {
+    flex-direction: column;
+  }
+
+  .howwork .update-plan .info .btn .text-area .text {
+    transform: translateY(2px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .howwork .box figure img {
+    aspect-ratio: 16/13;
+  }
+
+  .howwork .box .it-work .item {
+    gap: 15px;
+  }
+
+  .howwork .box .it-work .item .item-number p {
+    width: 45px;
+    height: 45px;
+  }
+
+  .howwork .box .it-work .item .item-number p,
+  .howwork .box .it-work .item .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .howwork .box figure img {
+    border-radius: 10px;
+  }
+  .howwork .box .it-work .item {
+    flex-direction: column;
+  }
+}
