@@ -81,6 +81,7 @@ export function Howwork() {
 
             <div className="btn">
               <div className="btn">
+
                 <Link href="#" className="start">
                   <div className="text-area">
                     <div className="text">Actualizar agora</div>
@@ -94,6 +95,7 @@ export function Howwork() {
                     <div className="text">Mais detalhes</div>
                   </div>
                 </Link>
+                
               </div>
             </div>
           </div>

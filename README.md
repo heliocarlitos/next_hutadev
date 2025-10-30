@@ -70,6 +70,12 @@ npm i
 npm install react-icons
 ```
 
+3. Scroll Suave
+
+```bash
+npm install lenis
+```
+
 Documentação da biblioteca [aqui](https://react-icons.github.io/react-icons/).
 
 ## Contribuindo
