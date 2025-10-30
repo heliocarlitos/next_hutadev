@@ -17,7 +17,7 @@ export default function RootLayout({
     const lenis = new Lenis({
       autoRaf: true,
       smoothWheel: true,
-      duration: 1.5,
+      duration: 1.2,
     })
 
     lenis.on('scroll', (e: any) => {
