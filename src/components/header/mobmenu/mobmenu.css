@@ -12,12 +12,13 @@
   position: fixed;
   width: 100%;
   max-width: 400px;
-  height: 100dvh;
+  /* height: 100dvh; */
   background-color: var(--sec-bg-color);
   top: 0;
   right: 0;
   z-index: 0;
   box-shadow: var(--normal-shadow);
+  display: none;
 }
 
 .mobmenu {
@@ -30,13 +31,15 @@
   padding: 20px 0 !important;
   display: flex;
   align-items: flex-start !important;
-  /* background-color: var(--sec-bg-color); */
+  background-color: var(--sec-bg-color);
   /* box-shadow: var(--normal-shadow); */
-  height: 100dvh;
-  /* z-index: 1; */
+  z-index: -1;
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateX(100%);
+  height: 100dvh !important;
+  /* background-color: red; */
+
 }
 
 .mobmenu.slide-in {
