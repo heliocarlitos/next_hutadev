@@ -158,6 +158,7 @@
 
 @media (min-width: 1040px) {
   .pano,
+  .white-banner,
   .mobmenu {
     display: none !important;
   }
