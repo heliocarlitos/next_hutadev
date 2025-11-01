@@ -147,6 +147,8 @@
 
   .howwork .update-plan {
     flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
   }
 
   .howwork .update-plan .info {

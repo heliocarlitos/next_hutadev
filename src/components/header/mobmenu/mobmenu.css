@@ -5,19 +5,19 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #00000025;
-  backdrop-filter: blur(4px);
+  background-color: #00000081;
 }
 
 .white-banner {
   position: fixed;
   width: 100%;
   max-width: 400px;
-  height: 77px;
+  height: 100dvh;
   background-color: var(--sec-bg-color);
   top: 0;
   right: 0;
   z-index: 0;
+  box-shadow: var(--normal-shadow);
 }
 
 .mobmenu {
@@ -30,10 +30,10 @@
   padding: 20px 0 !important;
   display: flex;
   align-items: flex-start !important;
-  background-color: var(--sec-bg-color);
-  box-shadow: var(--normal-shadow);
+  /* background-color: var(--sec-bg-color); */
+  /* box-shadow: var(--normal-shadow); */
   height: 100dvh;
-  z-index: -1;
+  /* z-index: 1; */
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateX(100%);
@@ -135,7 +135,6 @@
   }
 }
 
-
 .submenu a .icon {
   background-color: var(--blue-transparent);
   padding: 10px;
@@ -213,4 +212,3 @@
     padding-bottom: 150px !important;
   }
 }
-

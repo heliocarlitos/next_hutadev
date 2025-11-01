@@ -11,7 +11,7 @@ export function Howwork() {
           icon={<FaCircleUser />}
           tag="Perfil"
           title="Como isso funciona do seu lado?"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae laborum quasi quos officiis tenetur illo quae distinctio expedita mollitia veniam rem quo."
+          text="Depois de criares a tua conta, podes aceder à tua área pessoal, guardar informações, escolher produtos e acompanhar tudo o que fazes dentro da plataforma de forma simples e rápida."
         />
 
         <div className="box">
@@ -33,8 +33,9 @@ export function Howwork() {
               <div className="item-content">
                 <p className="title">Cria uma conta</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Voluptatem officiis aut placeat vel rem quos.
+                  Faz o teu registo com o e-mail ou número de telefone. É rápido
+                  e fácil, e logo ficas pronto para usar todos os recursos da
+                  plataforma.
                 </p>
               </div>
             </div>
@@ -44,10 +45,11 @@ export function Howwork() {
                 <p>02</p>
               </div>
               <div className="item-content">
-                <p className="title">Personaliza seu perfil</p>
+                <p className="title">Personaliza o teu perfil</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Voluptatem officiis aut placeat vel rem quos.
+                  Coloca uma foto, escreve um pequeno texto sobre ti e escolhe
+                  as tuas preferências. Assim o teu perfil fica com o teu
+                  estilo e mais completo.
                 </p>
               </div>
             </div>
@@ -57,10 +59,10 @@ export function Howwork() {
                 <p>03</p>
               </div>
               <div className="item-content">
-                <p className="title">Escolha seu produto ou serviço</p>
+                <p className="title">Escolhe o teu produto ou serviço</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Voluptatem officiis aut placeat vel rem quos.
+                  Vê as opções disponíveis, lê as descrições e escolhe o que
+                  mais te agrada. Depois é só confirmar e começar a aproveitar.
                 </p>
               </div>
             </div>
@@ -68,20 +70,18 @@ export function Howwork() {
         </div>
 
         <div className="update-plan">
-
           <div className="info">
             <p className="title">
-              Se já tem uma conta, considere ser um <span>Membro Especíal</span>
+              Se já tens uma conta, considera ser um <span>Membro Especial</span>
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
-              deleniti nisi sapiente iusto aperiam, atque quasi amet,
-              consequuntur.
+              Ao tornares-te Membro Especial, tens acesso a mais vantagens, como
+              descontos, ferramentas extras e prioridade no atendimento. Vale a
+              pena actualizar.
             </p>
 
             <div className="btn">
               <div className="btn">
-
                 <Link href="#" className="start">
                   <div className="text-area">
                     <div className="text">Actualizar agora</div>
@@ -95,13 +95,18 @@ export function Howwork() {
                     <div className="text">Mais detalhes</div>
                   </div>
                 </Link>
-                
               </div>
             </div>
           </div>
 
           <figure>
-            <img src="/image/relative/mini-painel.webp" alt="Demo" width={700} height={450} loading="lazy"/>
+            <img
+              src="/image/relative/mini-painel.webp"
+              alt="Demo"
+              width={700}
+              height={450}
+              loading="lazy"
+            />
           </figure>
         </div>
       </div>
