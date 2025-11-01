@@ -92,7 +92,6 @@
   }
 }
 
-/* Conteúdo do link */
 .mobmenu .mobmenu-ul .mobmenu-ul-li a .link-content,
 .mobmenu .mobmenu-ul .mobmenu-ul-li button .link-content {
   display: flex;
@@ -100,7 +99,6 @@
   gap: 10px;
 }
 
-/* Ícone do submenu rodando */
 .mobmenu .mobmenu-ul .mobmenu-ul-li .submenu-btn.open .c-icon,
 .mobmenu .mobmenu-ul .mobmenu-ul-li .submenu-btn.open .c-icon svg {
   transform: rotate(90deg);
@@ -167,7 +165,6 @@
   margin-top: 3px;
 }
 
-/* Botão criar conta */
 .mobmenu .mobmenu-ul .mobmenu-ul-li .creat-count {
   justify-content: center;
   position: relative;
@@ -191,12 +188,10 @@
   background-image: var(--bg-gradient);
 }
 
-/* Ícones dos links */
 .mobmenu .mobmenu-ul .mobmenu-ul-li .c-icon svg {
   font-size: 1.1em;
 }
 
-/* Responsividade */
 @media (min-width: 1040px) {
   .pano,
   .white-banner,
@@ -237,7 +232,6 @@
   }
 }
 
-/* Altura */
 @media (max-height: 915px) {
   .mobmenu {
     overflow-y: auto;
